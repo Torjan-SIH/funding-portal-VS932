@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Torjan-SIH/funding-portal-VS932.git/static/css/main.1c5605a1.css",
+    "main.js": "/Torjan-SIH/funding-portal-VS932.git/static/js/main.69de5f11.js",
+    "static/js/787.d5d997dc.chunk.js": "/Torjan-SIH/funding-portal-VS932.git/static/js/787.d5d997dc.chunk.js",
+    "index.html": "/Torjan-SIH/funding-portal-VS932.git/index.html",
+    "main.1c5605a1.css.map": "/Torjan-SIH/funding-portal-VS932.git/static/css/main.1c5605a1.css.map",
+    "main.69de5f11.js.map": "/Torjan-SIH/funding-portal-VS932.git/static/js/main.69de5f11.js.map",
+    "787.d5d997dc.chunk.js.map": "/Torjan-SIH/funding-portal-VS932.git/static/js/787.d5d997dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c5605a1.css",
+    "static/js/main.69de5f11.js"
+  ]
+}
