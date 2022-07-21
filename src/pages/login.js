@@ -22,8 +22,6 @@ const Login = () =>{
          alert("Enter a valid password");
          
    }
-
-
    return(
       <form onSubmit={submitLoginHandler}>
          <div className="loginUserName">
