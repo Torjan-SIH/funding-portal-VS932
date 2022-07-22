@@ -7,7 +7,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Register from './pages/register';
-import ForgotPasswd from './pages/forgotpasswd'
+import ForgotPasswd from './pages/forgotpasswd';
 
 function App() {
   return (

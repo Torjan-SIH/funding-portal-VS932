@@ -1,0 +1,20 @@
+.passwdWarning{
+   float: none;
+   text-align: left;
+}
+li.warn{
+   list-style-type: none;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 15px;
+}
+.passwdWarning{
+   width: fit-content;
+   margin-left: auto;
+   margin-right: auto;
+}
+.valid{
+   color: rgb(24, 225, 24);
+}
+.invalid{
+   color: red;
+}
