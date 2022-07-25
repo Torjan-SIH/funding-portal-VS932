@@ -29,39 +29,70 @@ const Login = () =>{
          
    }
    return(
+      <center>
       <form onSubmit={submitLoginHandler}>
-         <div className="loginUserName">
+   <table>
+         <tr className="loginUserName">
+            <th>
             <label className="loginLabel" for="userLogin" >Username  </label><br></br>
+            </th>
+            <td>
             <input className="loginInput" type="email" name="username" value={userLogin} required onChange = {(e) => changeLoginHandler(e)} ></input> 
-         </div>
-         <div className="loginPassword">
+            </td>
+         </tr>
+         <tr className="loginPassword">
+            <th>
             <label className="loginLabel" for="passwdLogin">Password </label><br></br>
+            </th>
+            <td>
             <input className="loginInput" type="password" name="password" value={passwdLogin} required onChange = {(e) => changeLoginHandler(e)}></input>
-         </div>
-         <div className="loginRoles">
+            </td>
+         </tr>
+         <tr className="loginRoles">
+            <th>
             <label className="loginLabel" for="role">Select Role: </label>
+            </th>
+            <td>
             <select className="loginInput" name="role" value={roleLogin} required onChange={(e) => changeLoginHandler(e)} > 
                <option name="role" value="">Select</option>
                <option name="role" value="agencies" >Agencies</option>
                <option name="role" value="hei" >HEI's</option>
                <option name="role" value="oe" >OE's</option>
             </select>
-         </div>
-         <div>
+            </td>
+         </tr>
+         <tr>
+            <td colSpan={2}>
             <li className="warn">
                {validPasswd ? <span className="valid">Password Length</span> : <span className="invalid">Password Length</span>}
             </li>
-         </div>
-         <div className="loginSubmit">
+            </td>
+         </tr>
+         <tr className="loginSubmit" >
+            <td colSpan={2}>
+            <center>
             <button type="submit" className="loginSubmitButton">Login</button> 
-         </div>
-         <div className="forgotPasswd">
+            </center>
+            </td>
+         </tr>
+         <tr className="forgotPasswd">
+            <td colSpan={2}>
+               <center>
             <Link to="/forgotpasswd" ><p>Forgot Password?</p></Link>
-         </div>
-         <div className="loginRegister">
-            Don't have an account?<Link to="/register"><p>Sign-up</p></Link>
-         </div>
-      </form>
+            </center>
+            </td>
+         </tr>
+         <tr className="loginRegister">
+            <td colSpan={2}>
+               <center>
+            Don't have an a
+            .ccount?<h3><Link to="/register"><p>Sign-up</p></Link></h3>
+            </center>
+            </td>
+         </tr>
+   </table>
+</form>
+</center>
    )
 }
 
