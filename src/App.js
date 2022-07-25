@@ -9,11 +9,10 @@ import Contact from './pages/contact';
 import Register from './pages/register';
 import ForgotPasswd from './pages/forgotpasswd';
 
-
 function App() {
   return (
     <div className="App">
-     
+      
       <BrowserRouter>
         <Navbar/>
         <Routes>
