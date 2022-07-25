@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './headerFooterStyle.css'
 
-const Header = () =>{
+const Headers = () =>{
     return(
-        <Header>
-            <Link to='/home'>One Nation - One Funding</Link>
-        </Header>
+        <div className="headerStyle">
+            <Link to="/home"><p className="headerText">One Nation - One Funding</p></Link>
+        </div>
     )
 }
 
-export default Header
+export default Headers

@@ -1,13 +1,11 @@
 import React from "react";
 
-const Footer = () =>{
+const Footers = () =>{
     return(
-        <Footer>
-            <div>
-                Thankyou for visiting!
-            </div>
-        </Footer>
+        <footer>
+            <p>Thankyou for visiting!</p>
+        </footer>
     )
 }
 
-export default Footer
+export default Footers

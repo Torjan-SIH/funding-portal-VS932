@@ -8,16 +8,16 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Register from './pages/register';
 import ForgotPasswd from './pages/forgotpasswd';
-import Header from './components/HeaderFooter/header';
-import Footer from './components/HeaderFooter/footer';
+import Headers from './components/HeaderFooter/header';
+import Footers from './components/HeaderFooter/footer';
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header/>
+        <Headers/>
         <Navbar/>
-        <Footer/>
         <Routes>
           <Route path='/home' element={<Home/>} />
           <Route path='/about' element={<About/>} />
@@ -28,6 +28,7 @@ function App() {
           <Route path='/register' element={<Register/>} />
         </Routes>
       </BrowserRouter>
+      <Footers/>
     </div>
   );
 }
