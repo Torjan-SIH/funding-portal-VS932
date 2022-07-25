@@ -18,3 +18,7 @@ li.warn{
 .invalid{
    color: red;
 }
+.tableRegister{
+   margin-left: auto;
+   margin-right: auto;
+}

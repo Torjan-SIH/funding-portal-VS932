@@ -57,7 +57,7 @@ const Register = () =>{
 
    return(
       <form onSubmit={validate}>
-         <table>
+         <table className="tableRegister">
          <tr className="firstName">
             <th>
             <label className="firstNameLabel" for="firstName" >First Name </label>
