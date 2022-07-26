@@ -5,6 +5,7 @@ import './pagesStyle.css';
 
 const Login = () =>{
    
+   
    const [userLogin, setUserLogin] = useState(null);
    const [passwdLogin, setPasswdLogin] = useState("");
    const [roleLogin, setRoleLogin] = useState(null);
@@ -29,6 +30,7 @@ const Login = () =>{
          
    }
    return(
+      <div className="login">
       <center>
          <form onSubmit={submitLoginHandler}>
             <table>
@@ -92,7 +94,9 @@ const Login = () =>{
             </table>
          </form>
       </center>
+      </div>
    )
+   
 }
 
 export default Login
