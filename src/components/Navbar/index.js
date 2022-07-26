@@ -2,9 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import './navBarStyle.css';
 
-const Navbar = () => {
+const NavBar = () => {
    return (
      <div className="navBar">
+       {/* <img
+              src='https://www.creditboss.in/wp-content/uploads/2020/10/Process-of-funding.jpg'
+              height='30'
+              alt=''
+              loading='lazy'
+            /> */}
          <ul className="navBarList">
             <Link to="/home" ><li className="navList">Home</li></Link>
             <Link to="/about" ><li className="navList">About</li></Link>
@@ -13,7 +19,8 @@ const Navbar = () => {
             <Link to="/login" ><li className="navList">Login</li></Link>
          </ul>
      </div>
+     
    );
  };
    
- export default Navbar;
+ export default NavBar;

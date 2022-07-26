@@ -1,3 +1,8 @@
 .headerText{
     text-decoration: none;
 }
+.headerStyle{
+    /* position: fixed; */
+    margin-left: 100px;
+    
+}

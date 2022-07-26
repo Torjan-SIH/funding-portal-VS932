@@ -56,6 +56,7 @@ const Register = () =>{
       },[passwdRegister, passwdConfirm, passwdlen]);
 
    return(
+      <div className="register">
       <form onSubmit={validate}>
          <table className="tableRegister">
          <tr className="firstName">
@@ -156,6 +157,7 @@ const Register = () =>{
          </tr>
       </table>
     </form>
+    </div>
 
    )
 }
