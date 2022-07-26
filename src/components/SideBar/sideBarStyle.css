@@ -1,0 +1,18 @@
+.sideBarDiv{
+    width: fit-content;
+    height: fit-content;
+    text-align: start;
+    border: 2px solid black;
+    margin: 0%;
+    padding-left: 0%;
+ }
+ .sideBarElement{
+    padding: 10px;
+    font-weight: bolder;
+    list-style-type: none;
+    padding-left: 0%;
+    text-decoration: none;
+ }
+ .sideBar{
+    margin: 10px;
+ }

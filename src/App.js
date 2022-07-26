@@ -11,7 +11,6 @@ import ForgotPasswd from './pages/forgotpasswd';
 import Headers from './components/HeaderFooter/header';
 import Footers from './components/HeaderFooter/footer';
 
-
 function App() {
   return (
     <div className="App">
