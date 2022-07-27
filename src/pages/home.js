@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Carousel} from "react-bootstrap";
+import FundsExplorer from "./funds/fundsexplorer";
 
 
 const Home = () =>{
@@ -36,6 +37,7 @@ const Home = () =>{
         
       </Carousel.Item>
     </Carousel>
+    <FundsExplorer />
    
       </div>
    )
