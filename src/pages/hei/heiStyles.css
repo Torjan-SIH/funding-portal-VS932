@@ -1,0 +1,10 @@
+.heiProfileDiv{
+    width: 100%;
+    text-align: left;
+}
+.heiProfileForm{
+    margin-left: 100%;
+}
+.sideBySide{
+    display: inline-flex;
+}

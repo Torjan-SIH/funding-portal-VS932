@@ -1,0 +1,10 @@
+.fundProfileDiv{
+    width: 100%;
+    text-align: left;
+}
+.fundProfileForm{
+    margin-left: 100%;
+}
+.sideBySide{
+    display: inline-flex;
+}

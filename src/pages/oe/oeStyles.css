@@ -1,0 +1,10 @@
+.oeProfileDiv{
+    width: 100%;
+    text-align: left;
+}
+.sideBySide{
+    display: inline-flex;
+}
+.oeProfileForm{
+    margin-left: 100%;
+}

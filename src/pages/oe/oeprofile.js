@@ -2,35 +2,40 @@ import React from "react";
 const OeProfile=() =>
 {
     return(
-            
-        <div className="ui main" align="center" >
-            <h2>OE PROFILE</h2>
-            <br></br>
-            <form className="ui form">
-                <div className="field" >
-                    <label>Name:&nbsp;&nbsp;&nbsp;&nbsp; </label>
-                    <input type="text" name="name" placeholder="name" ></input><br></br>
-                    <br></br>
-                </div>
-                <div className="field">
-                    <label>Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" name="mail" placeholder="mail"></input><br></br>
-                    <br></br>
-                </div><div className="field">
-                    <label>Contact:&nbsp;&nbsp;</label>
-                    <input type="text" name="contact" placeholder="contact"></input><br></br>
-                    <br></br>
-                </div><div className="field">
-                    <label>Address:&nbsp;&nbsp;</label>
-                    <input type="text" name="address" placeholder="address"></input><br></br>
-                    <br></br>
-                </div>
-                <button className="ui button blue" style={{backgroundColor:'skyblue'}}>Save Changes</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button className="ui button blue" style={{backgroundColor:'skyblue'}}>Cancel</button>
+        <div className="oeProfileDiv">
+            <TopBar/>
+            <div className="sideBySide">
+                <FundSideBar/>
+            </div>
+            <div className="sideBySide">
+            <form className="oeProfileForm">
+                <h1 className="oeProfileHeading">OE Profile</h1>
+                <table className="oeProfileTable">
+                    <tr>
+                        <th>Name: </th>
+                        <td><input type="text" name="oename" ></input></td>
+                    </tr>
+                    <tr>
+                        <th>Email: </th>
+                        <td><input type="email" name="oemail" ></input></td>
+                    </tr>
+                    <tr>
+                        <th>Contact: </th>
+                        <td><input type="number" name="oecontact" ></input></td>
+                    </tr>
+                    <tr>
+                        <th>Address: </th>
+                        <td><input type="text" name="oeaddress" ></input></td>
+                    </tr>
+                    <tr>
+                        <td><button >Save</button></td>
+                        <td><button >Reset</button></td>
+                    </tr>
+                </table>
             </form>
+            </div>
         </div>
-        )
+    )
 }
 
 export default OeProfile;

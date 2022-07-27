@@ -1,36 +1,45 @@
 import React from "react";
-const FundsProfile=() =>
+import FundSideBar from "../../components/SideBar/FUNDsidebar";
+import TopBar from "../../components/TopBar/topbar";
+import './fundsStyles.css';
+
+const FundsProfile = () =>
 {
     return(
-        <div className="ui main" align="center" >
-            <h2>FUNDS PROFILE</h2>
-            <br></br>
-            <form className="ui form">
-                <div className="field" >
-                    <label>Name:&nbsp;&nbsp;&nbsp;&nbsp; </label>
-                    <input type="text" name="name" placeholder="name" ></input><br></br>
-                    <br></br>
-                </div>
-                <div className="field">
-                    <label>Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" name="mail" placeholder="mail"></input><br></br>
-                    <br></br>
-                </div><div className="field">
-                    <label>Contact:&nbsp;&nbsp;</label>
-                    <input type="text" name="contact" placeholder="contact"></input><br></br>
-                    <br></br>
-                </div><div className="field">
-                    <label>Address:&nbsp;&nbsp;</label>
-                    <input type="text" name="address" placeholder="address"></input><br></br>
-                    <br></br>
-                </div>
-                <button className="ui button blue" style={{backgroundColor:'skyblue'}}>Save Changes</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button className="ui button blue" style={{backgroundColor:'skyblue'}}>Cancel</button>
+        <div className="fundProfileDiv" >
+            <TopBar/>
+            <div className="sideBySide">
+                <FundSideBar/>
+            </div>
+            <div className="sideBySide">
+            <form className="fundProfileForm">
+                <h1 className="fundProfileHeading">Fund Profile</h1>
+                <table className="fundProfileTable">
+                    <tr>
+                        <th>Name: </th>
+                        <td><input type="text" name="oename" ></input></td>
+                    </tr>
+                    <tr>
+                        <th>Email: </th>
+                        <td><input type="email" name="oemail" ></input></td>
+                    </tr>
+                    <tr>
+                        <th>Contact: </th>
+                        <td><input type="number" name="oecontact" ></input></td>
+                    </tr>
+                    <tr>
+                        <th>Address: </th>
+                        <td><input type="text" name="oeaddress" ></input></td>
+                    </tr>
+                    <tr>
+                        <td><button >Save</button></td>
+                        <td><button >Reset</button></td>
+                    </tr>
+                </table>
             </form>
+            </div>
         </div>
     )
-
 }
 export default FundsProfile;
             

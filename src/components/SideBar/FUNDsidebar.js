@@ -8,7 +8,6 @@ const FundSideBar = () =>{
         <div className="sideBarDiv">
             <ProSidebar>
                 <Menu iconShape='square' className="sideBar">
-                
                     <MenuItem className="sideBarElement"><Link to="/">Dashboard</Link></MenuItem>
                     <MenuItem className="sideBarElement"><Link to="/">OE Evaluation</Link></MenuItem>
                     <MenuItem className="sideBarElement"><Link to="/">Schemes</Link></MenuItem>
