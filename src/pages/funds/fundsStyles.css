@@ -4,7 +4,15 @@
 }
 .fundProfileForm{
     margin-left: 100%;
+    
 }
 .sideBySide{
     display: inline-flex;
+   
+}
+.fundsExplorerDiv{
+    font: italic bold 12px/30px Georgia, serif;
+}
+.heiExplorerDiv{
+    font: italic bold 12px/30px Georgia, serif;
 }

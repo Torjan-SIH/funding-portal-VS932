@@ -3,7 +3,7 @@ import React from "react";
 const Footers = () =>{
     return(
         <footer>
-            <p>Thankyou for visiting!</p>
+            <h4 >Thankyou for visiting!</h4>
         </footer>
     )
 }

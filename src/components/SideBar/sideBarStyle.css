@@ -4,6 +4,7 @@
     text-align: start;
     border: 2px solid black;
     margin: 0%;
+    
  }
  .sideBarElement{
     padding: 10px;
@@ -11,7 +12,12 @@
     list-style-type: none;
     text-decoration: none;
     margin: 0%;
+    
  }
  .sideBar{
     margin: 10px;
+    margin-bottom: 100%;
+    margin-top: 50%;
+    /*textColor:#fff;
+     bgColor:#333;*/
  }

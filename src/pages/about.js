@@ -6,7 +6,7 @@ const About = () => {
         <h1>
         One Nation - One Funding...
       </h1>
-      <h4> An HEI needs funds to support its two primary missions  education and research (the third mission of directl
+      <h3> An HEI needs funds to support its two primary missions  education and research (the third mission of directl
       y contributing to society through innovation and entrepreneurship and outreach, which has also become quite 
       important, often generate resources to support it.) Though of course an HEI has one balance sheet, it is 
       important to separate the funding needs for the two functions, as well as support for these, as these missions
@@ -54,7 +54,7 @@ education. The HEGC support and the fees collected should cover the salaries of 
  comfortably discharge its primary function of education. How much funding the HEGC provides for subsidy and how 
  much of the cost is recovered as tuition will probably depend on the nature and location of institutions, and 
  presumably, there will be policies for the same.<br></br>
- </h4>
+ </h3>
 
  
     </div>

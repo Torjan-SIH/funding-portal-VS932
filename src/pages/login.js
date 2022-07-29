@@ -33,8 +33,10 @@ const Login = () =>{
       <div className="login">
       <center>
          <form onSubmit={submitLoginHandler}>
-            <table>
-               <tr className="loginUserName">
+         <table border="2" 
+       cellpadding="10"
+       cellspacing="5">
+               <tr className="loginUserName" >
                   <th>
                      <label className="loginLabel" for="userLogin" >Username  </label><br></br>
                   </th>

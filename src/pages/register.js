@@ -58,7 +58,9 @@ const Register = () =>{
    return(
       <div className="register">
       <form onSubmit={validate}>
-         <table className="tableRegister">
+         <table className="tableRegister" border="2" 
+       cellpadding="10"
+       cellspacing="5">
          <tr className="firstName">
             <th>
             <label className="firstNameLabel" for="firstName" >First Name </label>
@@ -150,11 +152,13 @@ const Register = () =>{
             </ul>
             </td>
          </tr>
+         <div className="button">
          <tr className="RegisterSubmit">
             <td>
             <button type="submit" className="RegisterSubmitButton">Register</button> 
             </td>
          </tr>
+         </div>
       </table>
     </form>
     </div>
