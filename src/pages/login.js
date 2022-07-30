@@ -33,8 +33,11 @@ const Login = () =>{
       <div className="login">
       <center>
          <form onSubmit={submitLoginHandler}>
-            <table>
-               <tr className="loginUserName">
+         <table border="2"
+         bgcolor="grey"
+       cellpadding="10"
+       cellspacing="5">
+               <tr className="loginUserName" >
                   <th>
                      <label className="loginLabel" for="userLogin" >Username  </label><br></br>
                   </th>
@@ -73,7 +76,7 @@ const Login = () =>{
                <tr className="loginSubmit" >
                   <td colSpan={2}>
                      <center>
-                        <button type="submit" className="loginSubmitButton">Login</button> 
+                        <button type="submit" className="loginSubmitButton" style={{background:"green"}}> Login</button> 
                      </center>
                   </td>
                </tr>

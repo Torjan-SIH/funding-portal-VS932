@@ -1,4 +1,7 @@
 import React from "react";
+import FundSideBar from "../../components/SideBar/FUNDsidebar";
+import TopBar from "../../components/TopBar/topbar";
+import './oeStyles.css';
 const OeProfile=() =>
 {
     return(

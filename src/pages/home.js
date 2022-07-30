@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Carousel} from "react-bootstrap";
-import FundsExplorer from "./funds/fundsexplorer";
 
 
 const Home = () =>{
@@ -19,7 +18,6 @@ const Home = () =>{
             <img className="d-block w-100" src="https://i2.cdn.turner.com/cnn/dam/assets/120416063143-education-funding-story-top.jpg" height="500" alt="Third slide"/>
           </Carousel.Item>
         </Carousel>
-      <FundsExplorer />
       </div>
   )
 }

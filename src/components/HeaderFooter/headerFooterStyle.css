@@ -1,8 +1,24 @@
 .headerText{
+    /*position: fixed;*/
     text-decoration: none;
+    size: 500px;
+    background: #142d4c;
+    /*width:100%;*/
+    height: 50px;
+    position: sticky;
+    top:0%;
 }
 .headerStyle{
-    /* position: fixed; */
-    margin-left: 100px;
+    /*position: fixed;*/ 
+    text-decoration: none;
+    position: sticky;
+    top:0%;
     
+}
+p{
+    color: #ececec
+    }
+h4{
+    color: black;
+    font: italic bold 12px/30px Georgia, serif;
 }

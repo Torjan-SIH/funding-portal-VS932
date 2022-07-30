@@ -1,18 +1,24 @@
+import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import FundSideBar from "../../components/SideBar/FUNDsidebar";
+import './fundsStyles.css';
 
 function FundsExplorer() {
   return (
+    <div className="fundsExplorerDiv">
+      <FundSideBar/>
+            
     <Row xs={1} md={2} className="g-4">
       {Array.from({ length: 1 }).map((_, idx) => (
-        <Col>
+        <Col >
           <Card >
             <Card.Img variant="top" src="holder.js/100px160" />
             <Card.Body>
               <Card.Title>Project the projector</Card.Title>
-              <Card.Text>
+              <Card.Text >
               We are from .......... school, Nambur. We need funds for the school regarding the projector facility.
                A total of 10 classrooms and each class needs a projector. Through this, we can give our students 
                the best way of teaching. Each projector costs 25,000/-.So, we raise the funds for 2,50,000/-
@@ -50,7 +56,7 @@ function FundsExplorer() {
           <Card>
             <Card.Img variant="left" src="holder.js/100px160" />
             <Card.Body>
-              <Card.Title>Name 4</Card.Title>
+              <Card.Title></Card.Title>
               <Card.Text>
                 This is a longer card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
@@ -63,6 +69,7 @@ function FundsExplorer() {
       </Col>
      
     </Row>
+    </div>
   );
 }
 

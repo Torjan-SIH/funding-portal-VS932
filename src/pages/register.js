@@ -58,7 +58,10 @@ const Register = () =>{
    return(
       <div className="register">
       <form onSubmit={validate}>
-         <table className="tableRegister">
+         <table className="tableRegister" border="2" 
+         bgcolor="grey"
+       cellpadding="10"
+       cellspacing="5">
          <tr className="firstName">
             <th>
             <label className="firstNameLabel" for="firstName" >First Name </label>
@@ -128,7 +131,7 @@ const Register = () =>{
             <input className="confirmInput" type="password" name="passwordcnfrm" value={passwdConfirm} required onChange={(e) => changeRegisterHandler(e)}></input>
             </td>
          </tr>
-         <tr className="passwdWarning">
+         <tr className="passwdWarning"> 
             <td>
             <ul>
                <li className="warn">
@@ -150,11 +153,13 @@ const Register = () =>{
             </ul>
             </td>
          </tr>
-         <tr className="RegisterSubmit">
-            <td>
-            <button type="submit" className="RegisterSubmitButton">Register</button> 
+         <div className="button" >
+         <tr className="RegisterSubmit" >
+            <td align="center">
+            <button type="submit" className="RegisterSubmitButton" style={{background:"green"}} colspan="2">Register</button>
             </td>
          </tr>
+         </div>
       </table>
     </form>
     </div>

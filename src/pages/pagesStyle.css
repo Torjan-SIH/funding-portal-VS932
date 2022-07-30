@@ -26,14 +26,18 @@
 .about
 {
    margin-top: 85px;
+   font: italic bold 12px/30px Georgia, serif;
+   background-color: #9fd3c7;
 }
 .contact
 {
    margin-top: 85px;
+   font: italic bold 12px/30px Georgia, serif;
 }
 .events
 {
    margin-top: 85px;
+   font: italic bold 12px/30px Georgia, serif;
 }
 .forgotpassword
 {
@@ -46,11 +50,17 @@
 .login
 {
    margin-top: 85px;
+   
+   /*background-image: linear-gradient(to bottom right, white, black);*/
+   
 }
-.login{
-   margin-top: 85px;
+.table{
+   background-color:"blue";
 }
+
 .register{
    margin-top: 85px;
 }
+
+
 

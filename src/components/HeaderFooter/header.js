@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import './headerFooterStyle.css'
 
 const Headers = () =>{
     return(
         <div className="headerStyle">
-            <Link to="/home"><p className="headerText">One Nation - One Funding</p></Link>
+            <p className="headerText"><h1 >One Nation - One Funding</h1></p>
         </div>
     )
 }
