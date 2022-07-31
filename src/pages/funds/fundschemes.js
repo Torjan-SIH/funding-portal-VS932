@@ -3,38 +3,37 @@ import FundSideBar from "../../components/SideBar/FUNDsidebar";
 import TopBar from "../../components/TopBar/topbar";
 import './fundsStyles.css';
 
-const FundsOeEvaluation = () =>
+const FundSchemes = () =>
 {
     return(
         <div className="fundProfileDiv" >
             <TopBar/>
+            <div className="btn">
+            <button >New Scheme</button>
+            </div>
             <div className="sideBySide">
                 <FundSideBar/>
             </div>
             <div className="sideBySide">
             <form className="fundProfileForm">
-                <h1 className="fundProfileHeading">OE Evaluation</h1>
+                <h1 className="fundProfileHeading">Schemes</h1>
                 <table className="fundProfileTable">
                     <tr>
-                        <th>HEI/Individual Name </th>
-                        <th>Applied Scheme ID </th>
-                        <th>Applied Scheme </th>
-                        <th>Applied Date</th>
-                        <th>Status</th>
+                        <th>Scheme ID </th>
+                        <th>Scheme Name</th>
+                        <th>Date</th>
                     </tr>
                     <tr>
                         <td>Scheme ID </td>
                         <td>Scheme Name </td>
                         <td>Applied On </td>
-                        <td>03-03-03</td>
-                        <td>Approved</td>
+
                     </tr>
                     <tr>
                         <td>Scheme ID </td>
                         <td>Scheme Name </td>
                         <td>Applied On </td>
-                        <td>01-02-01</td>
-                        <td>Rejected</td> 
+                
                     </tr>
                 </table>
             </form>
@@ -42,6 +41,6 @@ const FundsOeEvaluation = () =>
         </div>
     )
 }
-export default FundsOeEvaluation;
+export default FundSchemes;
             
         

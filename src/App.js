@@ -7,6 +7,7 @@ import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
 import Register from './pages/register';
+import Registeredpage from './pages/registeredpage';
 import ForgotPasswd from './pages/forgotpasswd';
 import Headers from './components/HeaderFooter/header';
 import Footers from './components/HeaderFooter/footer';
@@ -23,6 +24,7 @@ import Heidashboard from './pages/hei/heidashboard';
 import Oedashboard from './pages/oe/oedashboard';
 import HeiProposal from './pages/hei/heiproposal';
 import Fundsoeevaluation from './pages/funds/fundsoeevaluation';
+import Fundschemes from './pages/funds/fundschemes';
 
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
           <Route path='/login' element={<Login/>} />
           <Route path='/forgotpasswd' element={<ForgotPasswd/>} />
           <Route path='/register' element={<Register/>} />
+          <Route path='/registeredpage' element={<Registeredpage/>} />
           <Route path='/heiexplorer' element={<Heiexplorer/>} />
           <Route path='/heiprofile' element={<Heiprofile/>} />
           <Route path='/fundsprofile' element={<Fundsprofile/>} />
@@ -53,6 +56,7 @@ function App() {
           <Route path='/oedashboard' element={<Oedashboard/>} />
           <Route path='/heiproposal' element={<HeiProposal/>} />
           <Route path='/fundsoeevaluation' element={<Fundsoeevaluation/>} />
+          <Route path='/fundschemes' element={<Fundschemes/>} />
         </Routes>
       </BrowserRouter>
       <Footers/>
