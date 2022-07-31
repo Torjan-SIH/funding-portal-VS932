@@ -1,16 +1,16 @@
 .navBar{
    text-align: center;
-   /*width: 1000%;*/
+   width: 1000%;
    height: 60px;
    display: flex;
   /* margin-left: 0;
    margin-right: 0;*/
    position: fixed;
-   background: #bbe9db;
+   background: #142d4c;
    justify-content: space-between;
 padding: 0.2rem calc((100vw - 1000px) / 2);
 z-index: 12;
-position: sticky;
+/*position: sticky;*/
 top:0%;
 float: center;
 display: block;
@@ -29,8 +29,11 @@ li.navList{
    padding-left: 60px;
    padding-right: 60px;
    font-weight: bolder;
+   color: #f2f2f2;
+   
 }
 #nav ul {
    display: inline-block;
    list-style-type: none;
+   
 }

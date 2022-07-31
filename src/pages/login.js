@@ -32,9 +32,11 @@ const Login = () =>{
    return(
       <div className="login">
       <center>
-         <form onSubmit={submitLoginHandler}>
+      
+         <form onSubmit={submitLoginHandler} >
          <table border="2"
-         bgcolor="grey"
+          bgcolor="white"
+          
        cellpadding="10"
        cellspacing="5">
                <tr className="loginUserName" >
@@ -90,7 +92,7 @@ const Login = () =>{
                <tr className="loginRegister">
                   <td colSpan={2}>
                      <center>
-                        Don't have an account?<h3><Link to="/register"><p>Sign-up</p></Link></h3>
+                        Don't have an account?<h3><Link to="/register"><p color="blue">Sign-up</p></Link></h3>
                      </center>
                   </td>
                </tr>
