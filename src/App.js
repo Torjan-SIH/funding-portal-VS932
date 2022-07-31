@@ -25,7 +25,8 @@ import Oedashboard from './pages/oe/oedashboard';
 import HeiProposal from './pages/hei/heiproposal';
 import Fundsoeevaluation from './pages/funds/fundsoeevaluation';
 import Fundschemes from './pages/funds/fundschemes';
-
+import Oeverification from './pages/oe/oeverification';
+import Heiapplying from './pages/hei/heiapplying';
 
 function App() {
   return (
@@ -57,6 +58,8 @@ function App() {
           <Route path='/heiproposal' element={<HeiProposal/>} />
           <Route path='/fundsoeevaluation' element={<Fundsoeevaluation/>} />
           <Route path='/fundschemes' element={<Fundschemes/>} />
+          <Route path='/oeverification' element={<Oeverification/>} />
+          <Route path='/heiapplying' element={<Heiapplying/>} />
         </Routes>
       </BrowserRouter>
       <Footers/>

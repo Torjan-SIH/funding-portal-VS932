@@ -8,3 +8,17 @@
 .oeProfileForm{
     margin-left: 100%;
 }
+.accept
+{
+    margin-top: 200px;
+    background-color:black;
+    color: white;
+    
+
+}
+.reject
+{
+    margin-top: 100px;
+   background-color: black;
+   color:white;
+}
