@@ -1,5 +1,5 @@
 import React from "react";
-import FundSideBar from "../../components/SideBar/FUNDsidebar";
+import HeiSideBar from "../../components/SideBar/HEIsidebar";
 import TopBar from "../../components/TopBar/topbar";
 import './heiStyles.css';
 
@@ -8,7 +8,7 @@ const HeiProfile = () => {
         <div className="heiProfileDiv">
             <TopBar/>
             <div className="sideBySide">
-                <FundSideBar/>
+                <HeiSideBar/>
             </div>
             <div className="sideBySide">
                 <form className="heiProfileForm">
