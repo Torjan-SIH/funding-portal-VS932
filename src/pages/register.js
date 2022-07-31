@@ -59,9 +59,10 @@ const Register = () =>{
       <div className="register">
       <form onSubmit={validate}>
          <table className="tableRegister" border="2" 
-         bgcolor="grey"
+         bgcolor="white"
        cellpadding="10"
        cellspacing="5">
+         <tr><th colSpan='2'><center><b>REGISTER</b></center></th></tr>
          <tr className="firstName">
             <th>
             <label className="firstNameLabel" for="firstName" >First Name </label>
@@ -152,14 +153,14 @@ const Register = () =>{
                </li>
             </ul>
             </td>
+         </tr><tr className="RegisterSubmit" ><td colSpan='2'>
+         <div className="button" align="center">
+         
+            
+            <button type="submit" align="center "className="RegisterSubmitButton" style={{background:"#191970",color:"#f5fffa"}} colspan="2">Register</button>
+            </div></td>
          </tr>
-         <div className="button" >
-         <tr className="RegisterSubmit" >
-            <td align="center">
-            <button type="submit" className="RegisterSubmitButton" style={{background:"green"}} colspan="2">Register</button>
-            </td>
-         </tr>
-         </div>
+         
       </table>
     </form>
     </div>

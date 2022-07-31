@@ -8,10 +8,10 @@ const HeiSideBar = () =>{
         <div className="sideBarDiv">
             <ProSidebar>
                 <Menu iconShape='square' className="sideBar">
-                <MenuItem className="sideBarElement"><Link to="/">Explore</Link></MenuItem>
-                    <MenuItem className="sideBarElement"><Link to="/">Dashboard</Link></MenuItem>
-                    <MenuItem className="sideBarElement"><Link to="/">Proposal</Link></MenuItem>
-                    <MenuItem className="sideBarElement"><Link to="/">Profile</Link></MenuItem>
+                <MenuItem className="sideBarElement"><Link to="/"><h3><b>Explore</b></h3></Link></MenuItem><br></br>
+                    <MenuItem className="sideBarElement"><Link to="/"><h3><b>Dashboard</b></h3></Link></MenuItem><br></br>
+                    <MenuItem className="sideBarElement"><Link to="/"><h3><b>Proposal</b></h3></Link></MenuItem><br></br>
+                    <MenuItem className="sideBarElement"><Link to="/"><h3><b>Profile</b></h3></Link></MenuItem><br></br>
                 </Menu>
             </ProSidebar>
         </div>

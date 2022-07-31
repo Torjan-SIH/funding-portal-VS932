@@ -30,23 +30,27 @@ const Login = () =>{
          
    }
    return(
-      <div className="login">
+      <body className="login">
       <center>
       
-         <form onSubmit={submitLoginHandler} >
+         <form onSubmit={submitLoginHandler}>
          <table border="2"
           bgcolor="white"
           
        cellpadding="10"
        cellspacing="5">
+         <tr><th colSpan='2'><center><b>LOG IN</b></center></th></tr>
+         <tr><td></td></tr>
+         <tr><td></td></tr>
                <tr className="loginUserName" >
                   <th>
                      <label className="loginLabel" for="userLogin" >Username  </label><br></br>
                   </th>
+                  
                   <td>
                      <input className="loginInput" type="email" name="username" value={userLogin} required onChange = {(e) => changeLoginHandler(e)} ></input> 
                   </td>
-                  </tr>
+                  </tr><tr><td></td></tr>
                   <tr className="loginPassword">
                      <th>
                         <label className="loginLabel" for="passwdLogin">Password </label><br></br>
@@ -54,7 +58,7 @@ const Login = () =>{
                   <td>
                      <input className="loginInput" type="password" name="password" value={passwdLogin} required onChange = {(e) => changeLoginHandler(e)}></input>
                   </td>
-               </tr>
+               </tr><tr><td></td></tr>
                <tr className="loginRoles">
                   <th>
                      <label className="loginLabel" for="role">Select Role: </label>
@@ -67,39 +71,46 @@ const Login = () =>{
                      <option name="role" value="oe" >OE's</option>
                      </select>
                   </td>
-               </tr>
+               </tr><tr><td></td></tr>
                <tr>
                   <td>
                      <center>
                         {validPasswd ? <span className="valid">Password Length</span> : <span className="invalid">Password Length</span>}
                      </center>
                   </td>
-               </tr>
+               </tr><tr><td></td></tr>
                <tr className="loginSubmit" >
                   <td colSpan={2}>
                      <center>
                         <button type="submit" className="loginSubmitButton" style={{background:"green"}}> Login</button> 
                      </center>
                   </td>
-               </tr>
+               </tr><tr><td></td></tr>
                <tr className="forgotPasswd">
                   <td colSpan={2}>
                      <center>
-                        <Link to="/forgotpasswd" ><p>Forgot Password?</p></Link>
+                        <Link to="/forgotpasswd" ><p style={{color:"black"}}>Forgot Password?</p></Link>
                      </center>
                </td>
-               </tr>
-               <tr className="loginRegister">
+               </tr><tr><td></td></tr>
+               <tr>
                   <td colSpan={2}>
                      <center>
-                        Don't have an account?<h3><Link to="/register"><p color="blue">Sign-up</p></Link></h3>
+                        Don't have an account?
                      </center>
                   </td>
+               </tr>
+               <tr className="loginRegister">
+               <td colSpan={2}>
+                     <center>
+                     <h3><Link to="/register"><p style={{color:"black"}}>Sign-up</p></Link></h3>
+                     </center>
+                  </td>       
                </tr>
             </table>
          </form>
       </center>
-      </div>
+      </body>
    )
    
 }
