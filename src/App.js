@@ -18,8 +18,11 @@ import Oeprofile from './pages/oe/oeprofile';
 import FUNDsidebar from './components/SideBar/FUNDsidebar';
 import HEIsidebar from './components/SideBar/HEIsidebar';
 import Topbar from './components/TopBar/topbar';
-
-
+import Fundsdashboard from './pages/funds/fundsdashboard';
+import Heidashboard from './pages/hei/heidashboard';
+import Oedashboard from './pages/oe/oedashboard';
+import HeiProposal from './pages/hei/heiproposal';
+import Fundsoeevaluation from './pages/funds/fundsoeevaluation';
 
 
 function App() {
@@ -45,6 +48,11 @@ function App() {
           <Route path='/FUNDsidebar' element={<FUNDsidebar/>} />
           <Route path='/HEIsidebar' element={<HEIsidebar/>} />
           <Route path='/topbar' element={<Topbar/>} />
+          <Route path='/fundsdashboard' element={<Fundsdashboard/>} />
+          <Route path='/heidashboard' element={<Heidashboard/>} />
+          <Route path='/oedashboard' element={<Oedashboard/>} />
+          <Route path='/heiproposal' element={<HeiProposal/>} />
+          <Route path='/fundsoeevaluation' element={<Fundsoeevaluation/>} />
         </Routes>
       </BrowserRouter>
       <Footers/>

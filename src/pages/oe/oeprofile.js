@@ -1,5 +1,4 @@
 import React from "react";
-import FundSideBar from "../../components/SideBar/FUNDsidebar";
 import TopBar from "../../components/TopBar/topbar";
 import './oeStyles.css';
 const OeProfile=() =>
@@ -7,9 +6,7 @@ const OeProfile=() =>
     return(
         <div className="oeProfileDiv">
             <TopBar/>
-            <div className="sideBySide">
-                <FundSideBar/>
-            </div>
+            
             <div className="sideBySide">
             <form className="oeProfileForm">
                 <h1 className="oeProfileHeading">OE Profile</h1>
