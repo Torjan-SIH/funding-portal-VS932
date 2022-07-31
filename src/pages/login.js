@@ -34,17 +34,17 @@ const Login = () =>{
       <center>
       
          <form onSubmit={submitLoginHandler}>
-         <table border="2"
+         <table border="0" width="50%" 
           bgcolor="white"
           
        cellpadding="10"
-       cellspacing="5">
+       cellspacing="5" align="right">
          <tr><th colSpan='2'><center><b>LOG IN</b></center></th></tr>
          <tr><td></td></tr>
          <tr><td></td></tr>
                <tr className="loginUserName" >
-                  <th>
-                     <label className="loginLabel" for="userLogin" >Username  </label><br></br>
+                  <th><center>
+                     <label className="loginLabel" for="userLogin" >Username  </label><br></br></center>
                   </th>
                   
                   <td>
@@ -52,16 +52,16 @@ const Login = () =>{
                   </td>
                   </tr><tr><td></td></tr>
                   <tr className="loginPassword">
-                     <th>
-                        <label className="loginLabel" for="passwdLogin">Password </label><br></br>
+                     <th><center>
+                        <label className="loginLabel" for="passwdLogin">Password </label><br></br></center>
                      </th>
                   <td>
                      <input className="loginInput" type="password" name="password" value={passwdLogin} required onChange = {(e) => changeLoginHandler(e)}></input>
                   </td>
                </tr><tr><td></td></tr>
                <tr className="loginRoles">
-                  <th>
-                     <label className="loginLabel" for="role">Select Role: </label>
+                  <th><center>
+                     <label className="loginLabel" for="role">Select Role: </label></center>
                   </th>
                   <td>
                      <select className="loginInput" name="role" value={roleLogin} required onChange={(e) => changeLoginHandler(e)} > 
