@@ -34,10 +34,19 @@
    margin-top: 85px;
    font: italic bold 12px/30px Georgia, serif;
 }
-.events
+.eventsSlideShow
 {
-   margin-top: 85px;
+   margin-top: 250px;
    font: italic bold 12px/30px Georgia, serif;
+   width: 35%;
+   margin-left: 950px;
+  
+
+}
+.slideShow
+{
+   width: 35%;
+   margin-left: 950px;
 }
 .forgotpassword
 {

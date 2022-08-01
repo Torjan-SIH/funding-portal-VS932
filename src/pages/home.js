@@ -6,7 +6,7 @@ import {Carousel} from "react-bootstrap";
 const Home = () =>{
    return(
       <div className="home">
-       <table><tr>
+       <table><tr><div className="slideShow">
         <Carousel>
           <Carousel.Item interval={1000}>
             <img className="d-block w-100"src="https://www.creditboss.in/wp-content/uploads/2020/10/Process-of-funding.jpg" height="500" width="500" alt="First slide"/>
@@ -17,7 +17,8 @@ const Home = () =>{
           <Carousel.Item>
             <img className="d-block w-100" src="https://i2.cdn.turner.com/cnn/dam/assets/120416063143-education-funding-story-top.jpg" height="500" alt="Third slide"/>
           </Carousel.Item>
-        </Carousel></tr>
+        </Carousel>
+        </div></tr>
 
 <tr>
         <h3> An HEI needs funds to support its two primary missions  education and research (the third mission of directl
