@@ -8,12 +8,12 @@ const OeDashBoard=() =>
             <TopBar/>
             
             <div className="sideBySide">
-            <form className="oeProfileForm">
+            <form className="oeProfileForm"> 
                 <h1 className="oeProfileHeading">Verification Requests</h1>
-                <table className="oeProfileTable">
+                <table className="oeProfileTable" cellPadding={15} cellSpacing={15} border='1'>
                 <tr>
                         <th>HEI/Individual Name </th>
-                        <th>Scheme ID </th>
+                        <th>Scheme ID </th>           
                         <th>Applied Scheme Name</th>
                         <th>Applied Date</th>
 

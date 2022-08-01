@@ -13,8 +13,8 @@ const FundsOeEvaluation = () =>
             </div>
             <div className="sideBySide">
             <form className="fundProfileForm">
-                <h1 className="fundProfileHeading">Funds Dashboard</h1>
-                <table className="fundProfileTable">
+                <h1 className="fundProfileHeading">OE Evaluation</h1>
+                <table className="fundProfileTable" cellPadding={15} cellSpacing={20} border='1'>
                     <tr>
                         <th>HEI/Individual Name </th>
                         <th>Applied Scheme ID </th>

@@ -3,49 +3,44 @@ import FundSideBar from "../../components/SideBar/FUNDsidebar";
 import TopBar from "../../components/TopBar/topbar";
 import './fundsStyles.css';
 
-const FundsDashboard = () =>
+const FundSchemes = () =>
 {
     return(
         <div className="fundProfileDiv" >
             <TopBar/>
+            <div className="btn">
+            <button >New Scheme</button>
+            </div>
             <div className="sideBySide">
                 <FundSideBar/>
             </div>
             <div className="sideBySide">
             <form className="fundProfileForm">
-                <center>
-                <h1 className="fundProfileHeading">Funds Dashboard</h1>
-                <table className="fundProfileTable" cellPadding={15} cellSpacing={15} border='1'>
+                <h1 className="fundProfileHeading">Schemes</h1>
+                <table className="fundProfileTable">
                     <tr>
-                        <th>HEI/Individual Name </th>
-                        
-                        <th>Applied Scheme ID </th>
-                        <th>Applied Scheme </th>
-                        <th>Applied Date</th>
+                        <th>Scheme ID </th>
+                        <th>Scheme Name</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>Scheme ID </td>
+                        <td>Scheme Name </td>
+                        <td>Applied On </td>
 
                     </tr>
                     <tr>
                         <td>Scheme ID </td>
                         <td>Scheme Name </td>
                         <td>Applied On </td>
-                        <td>Status</td>
-                        <td><button >Verify</button></td>
-
+                
                     </tr>
-                    <tr>
-                        <td>Scheme ID </td>
-                        <td>Scheme Name </td>
-                        <td>Applied On </td>
-                        <td>Status</td>
-                        <td><button>Verify</button></td>
-
-                    </tr>
-                </table></center>
+                </table>
             </form>
             </div>
         </div>
     )
 }
-export default FundsDashboard;
+export default FundSchemes;
             
         
