@@ -9,7 +9,6 @@ import Contact from './pages/contact';
 import Register from './pages/register';
 import Registeredpage from './pages/registeredpage';
 import ForgotPasswd from './pages/forgotpasswd';
-import Headers from './components/HeaderFooter/header';
 import Footers from './components/HeaderFooter/footer';
 import Heiexplorer from './pages/hei/heiexplorer';
 import Heiprofile from './pages/hei/heiprofile';
@@ -32,7 +31,6 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Headers/>
         <NavBar/>
         <Routes>
           <Route path='/' element={<Home/>} />

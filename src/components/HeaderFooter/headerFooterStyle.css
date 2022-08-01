@@ -1,38 +1,15 @@
-.headerText{
-    /*position: fixed;*/
-    text-decoration: none;
-    size: 500px;
-    background: #142d4c;
-   /* width:500%;*/
-    height: 50px;
-    position: sticky;
-    top:0%;
-
-}
-.headerStyle{
-    
-    text-decoration: none;
-    position: sticky;
-    top:0%;
-    
-    
-    
-}
-p{
-    color: #ececec
-    }
-h4{
+.footerH4{
     color: #ececec;
     font: italic bold 12px/30px Georgia, serif;
+    margin-bottom: 0%;
 }
-#footer{
-    
+.footer{
     background: #142d4c;
-    position: fixed;
-    left: 0;
+    height: fit-content;
     bottom: 0;
+    left: 0;
     width: 100%;
-   
-    
+    margin-bottom: 0%;
 
-}
+    object-position: 0%;
+} 

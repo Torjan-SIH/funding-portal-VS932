@@ -19,7 +19,7 @@ function HeiExplorer() {
         
         <Col>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src="holder.js/50px50" />
             <Card.Body>
               <Card.Title>Hostel Scheme : </Card.Title>
               <Card.Text style={{color:"#48d1cc"}}>
