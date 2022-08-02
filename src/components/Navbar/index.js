@@ -9,7 +9,6 @@ const NavBar = () => {
        { <img 
               src='https://www.creditboss.in/wp-content/uploads/2020/10/Process-of-funding.jpg'
               height='40'
-              
               align='left'
               alt=''
               loading='lazy'
@@ -17,7 +16,7 @@ const NavBar = () => {
             
          <ul className="navBarList" >
           
-          <Link to="/home" ><li className="navList"><h3><b>ONE NATION-ONE FUNDING</b></h3></li></Link>
+            <Link to="/home" ><li className="navList"><h3>ONE NATION-ONE FUNDING</h3></li></Link>
             <Link to="/home" ><li className="navList">Home</li></Link>
             <Link to="/about" ><li className="navList">About</li></Link>
             <Link to="/contact" ><li className="navList">Contact</li></Link>

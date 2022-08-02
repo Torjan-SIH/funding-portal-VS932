@@ -9,7 +9,6 @@ import Contact from './pages/contact';
 import Register from './pages/register';
 import Registeredpage from './pages/registeredpage';
 import ForgotPasswd from './pages/forgotpasswd';
-import Headers from './components/HeaderFooter/header';
 import Footers from './components/HeaderFooter/footer';
 import Heiexplorer from './pages/hei/heiexplorer';
 import Heiprofile from './pages/hei/heiprofile';
@@ -25,13 +24,13 @@ import Oedashboard from './pages/oe/oedashboard';
 import HeiProposal from './pages/hei/heiproposal';
 import Fundsoeevaluation from './pages/funds/fundsoeevaluation';
 import Fundschemes from './pages/funds/fundschemes';
-
+import Oeverification from './pages/oe/oeverification';
+import Heiapplying from './pages/hei/heiapplying';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Headers/>
         <NavBar/>
         <Routes>
           <Route path='/' element={<Home/>} />
@@ -57,6 +56,8 @@ function App() {
           <Route path='/heiproposal' element={<HeiProposal/>} />
           <Route path='/fundsoeevaluation' element={<Fundsoeevaluation/>} />
           <Route path='/fundschemes' element={<Fundschemes/>} />
+          <Route path='/oeverification' element={<Oeverification/>} />
+          <Route path='/heiapplying' element={<Heiapplying/>} />
         </Routes>
       </BrowserRouter>
       <Footers/>
