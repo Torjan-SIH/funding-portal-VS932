@@ -26,6 +26,11 @@ import Fundsoeevaluation from './pages/funds/fundsoeevaluation';
 import Fundschemes from './pages/funds/fundschemes';
 import Oeverification from './pages/oe/oeverification';
 import Heiapplying from './pages/hei/heiapplying';
+import Oeregister from './pages/oe/oeregister';
+import Heiverify from './pages/stakeholder/heiverify';
+import Agencyverify from './pages/stakeholder/agencyverify';
+import Heiregister from './pages/hei/heiregister';
+import Agencyregister from './pages/funds/agencyregister';
 
 function App() {
   return (
@@ -58,6 +63,11 @@ function App() {
           <Route path='/fundschemes' element={<Fundschemes/>} />
           <Route path='/oeverification' element={<Oeverification/>} />
           <Route path='/heiapplying' element={<Heiapplying/>} />
+          <Route path='/oeregister' element={<Oeregister/>} />
+          <Route path='/heiverify' element={<Heiverify/>} />
+          <Route path='/agencyverify' element={<Agencyverify/>} />
+          <Route path='/heiregister' element={<Heiregister/>} />
+          <Route path='/agencyregister' element={<Agencyregister/>} />
         </Routes>
       </BrowserRouter>
       <Footers/>
