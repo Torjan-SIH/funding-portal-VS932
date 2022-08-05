@@ -1,5 +1,6 @@
 import React from "react";
 import TopBar from "../../components/TopBar/topbar";
+import OeSideBar from "../../components/SideBar/oesidebar";
 import './oeStyles.css';
 const OeProfile=() =>
 {
@@ -8,6 +9,7 @@ const OeProfile=() =>
             <TopBar/>
             
             <div className="sideBySide">
+            <OeSideBar/>
             <form className="oeProfileForm">
                 <h1 className="oeProfileHeading">OE Profile</h1>
                 <table className="oeProfileTable">

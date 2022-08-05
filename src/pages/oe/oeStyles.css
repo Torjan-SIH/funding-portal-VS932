@@ -8,6 +8,12 @@
 .oeProfileForm{
     margin-left: 100%;
 }
+
+button{
+    background-color: navy;
+    color: #bacdd8;
+ }
+
 .accept
 {
     margin-top: 200px;
@@ -22,3 +28,7 @@
    background-color: black;
    color:white;
 }
+.oeVerify{
+    align-items: right;
+}
+

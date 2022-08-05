@@ -1,5 +1,4 @@
 import { React } from 'react';
-import OeDashBoard from './oe/oedashboard';
 
 const Contact = () => {
    return (
@@ -9,7 +8,6 @@ const Contact = () => {
 	      <br></br>
 	      <h3>contact no. : 0987654321</h3>
 	      <h3>contact no. : 0863-23456</h3>
-         <OeDashBoard/>
       </div>
    )
 }

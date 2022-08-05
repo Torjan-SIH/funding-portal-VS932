@@ -3,7 +3,7 @@
     text-align: left;
 }
 .fundProfileForm{
-    margin-left: 100%;
+    margin-left: 70%;
     
 }
 .sideBySide{
@@ -12,7 +12,7 @@
    
 }
 .fundsExplorerDiv{
-    font: italic bold 12px/30px Georgia, serif;
+    font: italic bold 12px/30px Georgia, serif;    
 }
 .heiExplorerDiv{
     font: italic bold 12px/30px Georgia, serif;
@@ -32,4 +32,7 @@
 .btn{
     float: right;
 }
-  
+ button{
+    background-color: navy;
+    color: #bacdd8;
+ }

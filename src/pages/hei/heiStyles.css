@@ -31,6 +31,10 @@
 .btn{
     float: right;
 }
+button{
+    background-color: navy;
+    color: #bacdd8;
+ }
 .search{
     float: left;
 }
