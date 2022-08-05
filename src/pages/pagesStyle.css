@@ -137,17 +137,16 @@ marquee{
        opacity: 0;
    }
 }
---------------------------------------------
---------------------------------------------
-.bodu {
+
+/* .bodu {
    margin: 0;
    height: 100vh;
    font-weight: 100;
-   /* background: radial-gradient(#a23982,#1f1013);
-   background-image: url('D:\SIH_CODE\images\pexels-jakub-novacek-924824.jpg'); */
-    /* -webkit-overflow-Y: hidden;
+    background: radial-gradient(#a23982,#1f1013);
+   background-image: url('D:\SIH_CODE\images\pexels-jakub-novacek-924824.jpg'); 
+     -webkit-overflow-Y: hidden;
    -moz-overflow-Y: hidden;
-   -o-overflow-Y: hidden;  */
+   -o-overflow-Y: hidden;  
    overflow-y: hidden;
    -webkit-animation: fadeIn 1 1s ease-out;
    -moz-animation: fadeIn 1 1s ease-out;
@@ -301,4 +300,4 @@ marquee{
  50%{top: 0vh; opacity: .8;}
  75%{opacity: 1;}
  100%{top: -100vh; opacity: 0;}
-}
+} */
