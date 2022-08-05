@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="navBar">
       <nav>
       <div class="logo">
-        <img src='https://www.creditboss.in/wp-content/uploads/2020/10/Process-of-funding.jpg'/> 
+        <img src='https://www.creditboss.in/wp-content/uploads/2020/10/Process-of-funding.jpg' alt=""/> 
         <span>ONE NATION-ONE FUNDING</span>
       </div>
          <ul className="navBarList" >

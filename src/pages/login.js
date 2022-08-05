@@ -31,52 +31,30 @@ const Login = () =>{
    }
 
       return(
-         
-      
-
-         <div class="contactform">       
-      <center>
-      
-         <form onSubmit={submitLoginHandler}>
-         <table border="0" width="50%" 
-          bgcolor="white"
-          
-       cellpadding="10"
-       cellspacing="5">
-         <tr><th colSpan='2'><center><b>LOG IN</b></center></th></tr>
-         <tr><td></td></tr>
-         <tr><td></td></tr>
-
-               <tr className="loginUserName" >
-                  {/* <th><center>
-                     <label className="loginLabel" for="userLogin">Username</label><br></br></center>
-                  </th> */}
-                  
-                  <td colSpan={'2'}>
-                     <input className="loginInput"  type="email" name="username" placeholder="Username"value={userLogin} required onChange = {(e) => changeLoginHandler(e)} ></input> 
-                  </td>
-               </tr>
-               <tr className="loginPassword">
-                     {/* <th><center>
-                        <label className="loginLabel" for="passwdLogin">Password </label><br></br></center>
-                     </th> */}
-                  <td colSpan={'2'}>
-                     <input className="loginInput" type="password" placeholder="Password" name="password" value={passwdLogin} required onChange = {(e) => changeLoginHandler(e)}></input>
-                  </td>
-               </tr>
-               <tr className="loginRoles">
-                  {/* <th><center>
-                     <label className="loginLabel" for="role">Select Role: </label></center>
-                  </th> */}
-                  <td>
+     <div class="contactform"><center>
+      <form onSubmit={submitLoginHandler} className="myform">
+         <table border="0" width="50%"  cellpadding="10" cellspacing="5">
+          <tr><th colSpan='2'><center><h4><b>LOG IN</b></h4></center></th></tr>
+          <tr className="loginUserName" >
+             <td colSpan={'2'}>
+                <input className="loginInput"  type="email" name="username" placeholder="Username"value={userLogin} required onChange = {(e) => changeLoginHandler(e)} ></input> 
+             </td>
+          </tr>
+          <tr className="loginPassword">
+               <td colSpan={'2'}>
+                  <input className="loginInput" type="password" placeholder="Password" name="password" value={passwdLogin} required onChange = {(e) => changeLoginHandler(e)}></input>
+               </td>
+          </tr>
+          <tr className="loginRoles">
+               <td>
                      <select className="loginInput" name="role" value={roleLogin} required onChange={(e) => changeLoginHandler(e)} > 
                      <option name="role" value="">--Select--</option>
                      <option name="role" value="agencies" >Agencies</option>
                      <option name="role" value="hei" >HEI's</option>
                      <option name="role" value="oe" >OE's</option>
                      </select>
-                  </td>
-               </tr>
+                </td>
+          </tr>
                
                <tr>
                   <td>
