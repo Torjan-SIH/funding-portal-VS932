@@ -4,26 +4,24 @@ import './navBarStyle.css';
 
 const NavBar = () => {
    return (
-    
-     <div className="navBar">
-       { <img 
-              src='https://www.creditboss.in/wp-content/uploads/2020/10/Process-of-funding.jpg'
-              height='40'
-              align='left'
-              alt=''
-              loading='lazy'
-            /> }
-            
+    <div className="navBar">
+      <nav>
+      <div class="logo">
+        <img src='https://www.creditboss.in/wp-content/uploads/2020/10/Process-of-funding.jpg'/> 
+        <span>ONE NATION-ONE FUNDING</span>
+      </div>
          <ul className="navBarList" >
           
-            <Link to="/home" ><li className="navList"><h3>ONE NATION-ONE FUNDING</h3></li></Link>
-            <Link to="/home" ><li className="navList">Home</li></Link>
-            <Link to="/about" ><li className="navList">About</li></Link>
-            <Link to="/contact" ><li className="navList">Contact</li></Link>
-            <Link to="/events" ><li className="navList">Events</li></Link>
-            <Link to="/login" ><li className="navList">LogIn</li></Link>
+            
+            <Link to="/home" ><li className="navList"><h4><b>Home</b></h4></li></Link>
+            <Link to="/about" ><li className="navList"><h4><b>About</b></h4></li></Link>
+            <Link to="/contact" ><li className="navList"><h4><b>Contact</b></h4></li></Link>
+            <Link to="/events" ><li className="navList"><h4><b>Events</b></h4></li></Link>
+            <Link to="/login" ><li className="navList"><h4><b>LogIn</b></h4></li></Link>
          </ul>
-     </div>
+         </nav>
+         </div>
+     
      
    );
  };

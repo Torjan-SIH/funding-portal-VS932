@@ -4,12 +4,12 @@
     margin-bottom: 0%;
 }
 .footer{
-    background: #142d4c;
+    background-image: linear-gradient(rgba(20, 13, 151, 0.582),rgba(20, 13, 151, 0.582)),url(D:\SIH_CODE\images\pexels-jakub-novacek-924824.jpg);
     height: fit-content;
     bottom: 0;
     left: 0;
     width: 100%;
     margin-bottom: 0%;
-
+position: fixed;
     object-position: 0%;
 } 

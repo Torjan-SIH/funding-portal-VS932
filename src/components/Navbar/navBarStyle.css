@@ -1,24 +1,40 @@
+/**{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Popsins',sans-serif;
+}*/
 .navBar{
-   text-align: center;
    width: 100%;
-   height: fit-content;
+   height: 10%;
+   background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url( D:\SIH_CODE\images\pexels-jakub-novacek-924824.jpg);
+   background-position: center;
+   background-size: cover;
+   top:0%;
+   text-align: center;
    display: flex;
    position: fixed;
-   background: #142d4c;
-   padding-top: 1%;
-   /* justify-content: space-between; */
-   /* padding: 0.2rem calc((100vw - 1000px) / 2);
-   z-index: 12; */
-   /*position: sticky;*/
-   top:0%;
+   padding-top: 0%;
+   z-index: 12; 
+   /*position: sticky;
+   
    float: center;
    display: block;
    color: #f2f2f2;
    text-decoration: none;
    font-size: 20px;
+   */
 
 }
-.navBarList{
+nav{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   padding: 18px 8%;
+   transition: background 1s;
+}
+/*.navBarList{
    list-style-type: none;
    overflow: hidden;
    text-align: center;
@@ -30,9 +46,32 @@ li.navList{
    font-weight: bolder;
    color: #f2f2f2;
    
-}
-/* #nav ul {
+}*/
+nav ul li{
    display: inline-block;
    list-style-type: none;
+   margin: 10px 20px;
+   font-weight: 500;
+   color: #fff;
    
-} */
+} 
+nav .logo{
+   display: flex;
+   align-items: center;
+   font-size: 26px;
+   font-weight: 600;
+   color: #fff;
+}
+nav .logo img{
+   width: 60px;
+   margin-right: 10px;
+}
+/*nav:hover{
+   background: #fff;
+}*/
+.logo:hover{
+   color: #f8d93b;
+}
+.navList:hover{
+   color: #f8d93b ;
+}
