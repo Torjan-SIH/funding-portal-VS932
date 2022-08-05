@@ -10,7 +10,7 @@
     "bootstrap": "^5.2.0",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.4.0",
+    "react-bootstrap": "^2.5.0",
     "react-dev-utils": "^12.0.1",
     "react-dom": "^18.2.0",
     "react-password-checklist": "^1.4.0",
