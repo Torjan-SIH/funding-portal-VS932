@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import OeSideBar from "../../components/SideBar/oesidebar";
 import './oeStyles.css';
 
 const OeRegister = () =>{

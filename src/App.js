@@ -17,6 +17,7 @@ import Fundsprofile from './pages/funds/fundsprofile';
 import Oeprofile from './pages/oe/oeprofile';
 import FUNDsidebar from './components/SideBar/FUNDsidebar';
 import HEIsidebar from './components/SideBar/HEIsidebar';
+import Oesidebar from './components/SideBar/oesidebar';
 import Topbar from './components/TopBar/topbar';
 import Fundsdashboard from './pages/funds/fundsdashboard';
 import Heidashboard from './pages/hei/heidashboard';
@@ -54,6 +55,7 @@ function App() {
           <Route path='/oeprofile' element={<Oeprofile/>} />
           <Route path='/FUNDsidebar' element={<FUNDsidebar/>} />
           <Route path='/HEIsidebar' element={<HEIsidebar/>} />
+          <Route path='/oesidebar' element={<Oesidebar/>} />
           <Route path='/topbar' element={<Topbar/>} />
           <Route path='/fundsdashboard' element={<Fundsdashboard/>} />
           <Route path='/heidashboard' element={<Heidashboard/>} />

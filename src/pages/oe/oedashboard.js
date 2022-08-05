@@ -1,5 +1,6 @@
 import React from "react";
 import TopBar from "../../components/TopBar/topbar";
+import OeSideBar from "../../components/SideBar/oesidebar";
 import './oeStyles.css';
 const OeDashBoard=() =>
 {
@@ -8,6 +9,8 @@ const OeDashBoard=() =>
             <TopBar/>
             
             <div className="sideBySide">
+                <OeSideBar/>
+            </div>
             <form className="oeProfileForm"> 
                 <h1 className="oeProfileHeading">Verification Requests</h1>
                 <table className="oeProfileTable" cellPadding={15} cellSpacing={15} border='1'>
@@ -37,7 +40,7 @@ const OeDashBoard=() =>
                 </table>
             </form>
             </div>
-        </div>
+        
     )
 }
 

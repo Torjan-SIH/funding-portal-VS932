@@ -1,15 +1,22 @@
 import React from "react";
 import TopBar from "../../components/TopBar/topbar";
+import OeSideBar from "../../components/SideBar/oesidebar";
 
 
 const OeVerification=()=>
 {
     
     return(
-    <><TopBar />
-    <div className="oeVerify">
+    <div className="oeProfileDiv">
+        <TopBar />
+        
+    <div className="sideBySide">
+    <OeSideBar/>
+    </div>
+    <div className="sideBySide">
+    <div className="oeVerify" >
             <div className="oeHeiName">
-                <h6><b>HEI NAME/INDIVIDUAL NAME:</b></h6>
+               <h6><b>HEI NAME/INDIVIDUAL NAME:</b></h6>
             </div>
             <div className="oeSchemeId">
                 <h6><b>APPLIED SCHEME ID:</b></h6>
@@ -24,8 +31,11 @@ const OeVerification=()=>
             <button className="accept" >ACCEPT</button>
            &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
             <button className="reject">REJECT</button>
-          
-        </div></>
+          </div>
+          </div>
+          </div>
+        
+        
     )
 }
 export default OeVerification;
