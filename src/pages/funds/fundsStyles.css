@@ -8,6 +8,7 @@
 }
 .sideBySide{
     display: inline-flex;
+    margin-right: 10%;
    
 }
 .fundsExplorerDiv{
@@ -27,8 +28,8 @@
     padding: 8px;
   
     border-radius: 12px;
-  }
-  .btn{
+}
+.btn{
     float: right;
 }
   
