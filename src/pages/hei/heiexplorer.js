@@ -1,11 +1,9 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import React from "react";
 import HeiSideBar from "../../components/SideBar/HEIsidebar";
-import './heiStyles.css';
+import { CardHeiExplorer } from "../../components/CardView/cardview";
+const HeiExplorer=() =>
 
+<<<<<<< HEAD
 function HeiExplorer() {
   return (
     <div className="heiExplorerDiv">
@@ -150,8 +148,19 @@ function HeiExplorer() {
      
     </Row></tr>
     </table>
+=======
+{
+  return(
+    <div>
+    <div >
+    <HeiSideBar />
+>>>>>>> 790e1debfc78ff30cc3f178372c801e0f6bf6864
     </div>
-  );
-}
 
+    <div>
+    <CardHeiExplorer/>
+    </div>
+    </div>
+  )
+}
 export default HeiExplorer;

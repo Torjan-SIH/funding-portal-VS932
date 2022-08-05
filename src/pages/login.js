@@ -32,15 +32,21 @@ const Login = () =>{
 
       return(
          
-      <body className="login">
-         <div class="contactform">
-        <center>
-        
-         <form onSubmit={submitLoginHandler} className="myform" >
-         <center><h2>LOGIN</h2></center> 
-         <table cellPadding={'10'}>  
+      
 
-         
+         <div class="contactform">       
+      <center>
+      
+         <form onSubmit={submitLoginHandler}>
+         <table border="0" width="50%" 
+          bgcolor="white"
+          
+       cellpadding="10"
+       cellspacing="5">
+         <tr><th colSpan='2'><center><b>LOG IN</b></center></th></tr>
+         <tr><td></td></tr>
+         <tr><td></td></tr>
+
                <tr className="loginUserName" >
                   {/* <th><center>
                      <label className="loginLabel" for="userLogin">Username</label><br></br></center>
@@ -106,9 +112,10 @@ const Login = () =>{
                   </td>       
                </tr>
                </table>
-         </form> 
+               </form> 
       </center>
-      </div></body>
+      </div>
+     
       
    )
    

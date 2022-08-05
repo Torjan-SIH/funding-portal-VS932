@@ -1,5 +1,6 @@
 import React from "react";
 import FundSideBar from "../../components/SideBar/FUNDsidebar";
+import { ListFundOeEvaluation }from "../../components/ListView/listview";
 import TopBar from "../../components/TopBar/topbar";
 import './fundsStyles.css';
 
@@ -12,32 +13,7 @@ const FundsOeEvaluation = () =>
                 <FundSideBar/>
             </div>
             <div className="sideBySide">
-            <form className="fundProfileForm">
-                <h1 className="fundProfileHeading">OE Evaluation</h1>
-                <table className="fundProfileTable" cellPadding={15} cellSpacing={20} border='1'>
-                    <tr>
-                        <th>HEI/Individual Name </th>
-                        <th>Applied Scheme ID </th>
-                        <th>Applied Scheme </th>
-                        <th>Applied Date</th>
-                        <th>Status</th>
-                    </tr>
-                    <tr>
-                        <td>Scheme ID </td>
-                        <td>Scheme Name </td>
-                        <td>Applied On </td>
-                        <td>03-03-03</td>
-                        <td>Approved</td>
-                    </tr>
-                    <tr>
-                        <td>Scheme ID </td>
-                        <td>Scheme Name </td>
-                        <td>Applied On </td>
-                        <td>01-02-01</td>
-                        <td>Rejected</td> 
-                    </tr>
-                </table>
-            </form>
+                <ListFundOeEvaluation/>
             </div>
         </div>
     )

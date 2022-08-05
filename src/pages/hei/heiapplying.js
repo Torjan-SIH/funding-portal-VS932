@@ -17,13 +17,13 @@ const HeiApplying=()=>
             <div className="heiScheme">
                 <h6><b>SCHEME DESCRIPTION:</b></h6>
             </div>
-            <div className="search">
+            {/* <div className="search">
             <input id="search-input" type="search" class="form-control" />
             <label class="form-label" for="form1">Search</label>
             <button id="search-button" type="button" class="btn btn-primary">
             <i class="fas fa-search"></i>
             </button>
-            </div>
+            </div> */}
            
             <button className="accept" >SUBMIT</button>
            &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
