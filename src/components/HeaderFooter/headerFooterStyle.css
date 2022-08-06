@@ -11,6 +11,6 @@
     left: 0;
     width: 100%;
     margin-bottom: 0%;
-position: fixed;
+    position: relative;
     object-position: 0%;
 } 

@@ -22,27 +22,73 @@
    margin-left: auto;
    margin-right: auto;
 }
-
-
 .contact
 {
    margin-top: 85px;
    font: italic bold 12px/30px Georgia, serif;
 }
-.eventsSlideShow
-{
-   margin-top: 250px;
-   font: italic bold 12px/30px Georgia, serif;
-   width: 100%; 
-   /* margin-left: 950px; */
-  
 
-}
-.slideShow
+.slideShowHome, .slideShowEvents
 {
-    width: 100%;
-     
-    
+   width: 95%;
+   height: fit-content;
+   padding: 20px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.marqueeScrollHome{
+   background-color: whitesmoke;
+   border: 2px solid gainsboro;
+   box-shadow: 4px 10px 14px 4px rgba(57,17,69,.2);
+   border-radius: 50px;
+   width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.marqueeHome{
+   background-color: whitesmoke;
+   font-size: 30px;
+   color: brown;
+   padding: 1px;
+}
+.illustrations{
+   margin-top: 150px;
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-30px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+.illustrate1, .illustrate2{
+   height: 500px;
+   width: 500px;
+   border-radius: 10%;
+   box-shadow: 4px 10px 14px 4px rgba(57,17,69,.2);
+   margin: 50px 80px 50px 80px;
+   transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+.sideBySideHome{
+   display: inline-block;
+}
+.sketchs{
+   width: 100%;
+}
+.sketch1, .sketch2{
+   height: 500px;
+   width: 800px;
+}
+.sketch-1, .sketch-2{
+   display: inline-block;
 }
 .forgotpassword
 {
@@ -64,7 +110,7 @@
 }
 .myform{
    box-shadow: 4px 10px 14px 4px rgba(57,17,69,.2);
-  background-color:antiquewhite;
+   background-color:antiquewhite;
    padding-top: 5%;   
 }
 .contactform h2{
@@ -74,19 +120,32 @@
    text-align: center;
    text-transform: uppercase;
 }
+.loginTable{
+   border: 0;
+   width: 100%;  
+
+}
+.loginItem{
+   margin: 0%;
+   padding: 0%;
+   text-align: center;
+   align-items: center;
+}
 .loginInput{
    border-radius: 70px;
    font-family: sans-serif;
    outline: none;
    border: 2px solid rgba(57,17,69,.2);
-   width: 100%;
-   margin: 0 0 15px;
-   padding: 15px;
+   /* width: 100%; */
+   margin: 15px 10px 15px 10px;
+   padding: 15px 5px 15px 5px;
    font-size: 20px;
    transition: 0.25s;
    box-shadow: 4px 4px #888888;
-  font-weight: 500;
+   font-weight: 550;
    text-align: center;
+   color: black;
+   background-color: white;
 
 }
 
@@ -94,6 +153,7 @@
    width: 170px;
    height: 50px;
    border: none;
+   margin: 20px 10px 20px 10px;
    outline: none;
    background: black;
    color: #fff;
