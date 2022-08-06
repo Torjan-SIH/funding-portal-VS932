@@ -40,21 +40,6 @@ const Home = () =>{
           </div>
         </div>
 
-        {/* <div className="row-rowstyle">   
-          <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
-            <div class="bluetext"><h1>Best-in-Class</h1></div>
-            <div class="graytext"><h2>Empowering you <br></br>with knowledge and skills.</h2></div>
-          </div>
-          <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12"><img src="https://storage.googleapis.com/swayam2_central/assets/img/swayam_images/Slider/instructor.png" alt="" width="90%"></img></div>
-        </div>
-        <div class="row rowstyle">
-          <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12"><img src="https://storage.googleapis.com/swayam2_central/assets/img/swayam_images/Slider/credits_transfer.png" alt=""></img></div>
-            <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
-              <div class="bluetext"><h1>Easy</h1></div>
-              <div class="graytext"><h2>Complementing your</h2></div>
-            </div>
-        </div> */}
-
         <div className="sketchs">
           <div className="sketch-1">
             <h3>Best-in-Class</h3>
