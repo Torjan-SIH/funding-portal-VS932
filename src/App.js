@@ -6,7 +6,6 @@ import Login from './pages/login';
 import Home from './pages/home';
 import About from './pages/about';
 import Contact from './pages/contact';
-import Register from './pages/register';
 import Registeredpage from './pages/registeredpage';
 import ForgotPasswd from './pages/forgotpasswd';
 import Footers from './components/HeaderFooter/footer';
@@ -45,7 +44,6 @@ function App() {
           <Route path='/events' element={<Events/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/forgotpasswd' element={<ForgotPasswd/>} />
-          <Route path='/register' element={<Register/>} />
           <Route path='/registeredpage' element={<Registeredpage/>} />
           <Route path='/heiexplorer' element={<Heiexplorer/>} />
           <Route path='/heiprofile' element={<Heiprofile/>} />
