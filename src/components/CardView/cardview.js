@@ -1,11 +1,10 @@
-import React from "react";
+import { React, useState } from "react";
 import { Card } from "react-bootstrap";
-
 import Button from 'react-bootstrap/Button';
+import { PopUpFundCard, PopUpHeiCard } from "./popupcard";
 
 export const CardHeiExplorer= ()=>{
-const HeiSchemeInfo=[
-     
+  const HeiSchemeInfo=[
     {sname:"Hostel Scheme ",
     sid: 1,
     sdesc:"useful for hostel students",
@@ -21,11 +20,12 @@ const HeiSchemeInfo=[
     sdesc:"useful for hostel students",
     fund:100000
     },
- ]; 
-    
- const HeiCard=(card,index)=>
-    {
-      return(
+  ];  
+
+  const [popupstatus, setPopUpStatus] = useState(false);
+
+  const HeiCard = (card,index) => {
+    return(
          <div>
             <Card  style={{ width: "25rem" }} key={index} >
               <Card.Body>
@@ -33,27 +33,21 @@ const HeiSchemeInfo=[
                 <Card.Text>Scheme ID:{card.sid}</Card.Text>
                 <Card.Text>Scheme Description:{card.sdesc}</Card.Text>
                 <Card.Text>Fund:{card.fund}</Card.Text>
-                <Button variant="primary">Apply</Button>
+                <Button variant="primary" onClick={() => setPopUpStatus(true)}>Apply</Button>
               </Card.Body>
             </Card>
-            </div>
-            )
-    }
-      return (
-      <div className="heiExplorer">
-       
-   
-        {HeiSchemeInfo.map(HeiCard)}
-        
-          
-        </div>
-      
-          
-    );
+          </div>
+      )
   }
+  return (
+    <div className="heiExplorer">
+      {HeiSchemeInfo.map(HeiCard)}
+      <PopUpHeiCard setTrigger={setPopUpStatus} trigger={popupstatus} />
+    </div>
+  );
+}
 
-  export const CardFundExplorer=() =>
-  {
+export const CardFundExplorer = () =>{
     const HeiOwnSchemeInfo=[
      
         {pname:"Hostel Scheme ",
@@ -72,9 +66,10 @@ const HeiSchemeInfo=[
         rfund:100000
         },
      ]; 
-        
-     const HeiOwnCard=(card,index)=>
-        {
+    
+    const [popupstatus, setPopUpStatus] = useState(false);
+
+    const FundCard = (card,index) => {
           return(
              <div>
                 <Card  style={{ width: "25rem" }} key={index} >
@@ -83,22 +78,18 @@ const HeiSchemeInfo=[
                     <Card.Text>Proposal ID:{card.pid}</Card.Text>
                     <Card.Text>proposal Description:{card.pdesc}</Card.Text>
                     <Card.Text>Required Fund:{card.rfund}</Card.Text>
-                    <Button variant="primary">View</Button>
+                    <Button variant="primary" onClick={() => setPopUpStatus(true)}>View</Button>
                   </Card.Body>
                 </Card>
-                </div>
-                )
+              </div>
+          )
         }
-          return (
-          <div >
-           
-            {HeiOwnSchemeInfo.map(HeiOwnCard)}
-             </div>
-              
-        
-          
-              
-        );
-  }
+    return (
+        <div >
+            {HeiOwnSchemeInfo.map(FundCard)}
+            <PopUpFundCard trigger={popupstatus} setTrigger={setPopUpStatus} />
+        </div>
+      );
+}
   
 
