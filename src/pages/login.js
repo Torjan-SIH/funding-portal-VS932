@@ -1,17 +1,19 @@
 import React,{useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { PopUpSelectRoles } from "../components/ListView/popup";
+import $ from "jquery"; 
 import './register';
 import './pagesStyle.css';
 
 const Login = () =>{
    
    const [popupstatus, setPopUpStatus] = useState(false);
-   
    const [userLogin, setUserLogin] = useState(null);
    const [passwdLogin, setPasswdLogin] = useState("");
    const [roleLogin, setRoleLogin] = useState(null);
    const [validPasswd, setValidPasswd] = useState(null);
+   
+   const [result, setResult] = useState("");
    
    const changeLoginHandler = (e) =>{
       const{name} = e.target;
@@ -28,13 +30,26 @@ const Login = () =>{
    },[passwdLogin])
 
    const submitLoginHandler = (e) =>{
-      e.preventDefault();
-         
+      e.preventDefault(); 
+        
+      const form = $(e.target); 
+        $.ajax({ 
+            type: "POST", 
+            url: form.attr("action"), 
+            data: form.serialize(), 
+            success(data) { 
+               setResult(data); 
+            }, 
+        }); 
+        
    }
 
    return(
       <div class="contactform"><center>
-         <form onSubmit={submitLoginHandler} className="myform">
+         
+         <h1>{result}</h1>
+         
+         <form onSubmit={(event) => submitLoginHandler(event)} className="myform" action="http://localhost:8888/server.php" method="post">
             <table className="loginTable" >
                <tr>
                   <th><center><h2><b>LOG IN</b></h2></center></th>
