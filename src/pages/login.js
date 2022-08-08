@@ -1,10 +1,12 @@
 import React,{useEffect, useState} from "react";
 import { Link } from "react-router-dom";
+import { PopUpSelectRoles } from "../components/ListView/popup";
 import './register';
 import './pagesStyle.css';
 
 const Login = () =>{
    
+   const [popupstatus, setPopUpStatus] = useState(false);
    
    const [userLogin, setUserLogin] = useState(null);
    const [passwdLogin, setPasswdLogin] = useState("");
@@ -82,13 +84,15 @@ const Login = () =>{
                   <td >
                      <center>
                         <h5>Don't have an account?</h5>
-                     <h4><Link to="/register"><p style={{color:"black"}}>Sign-up</p></Link></h4>
+                        {/* <h4><Link to="/register" onClick={() => setPopUpStatus(true)}><p>Sign-up</p></Link></h4> */}
+                        <h4 onClick={() => setPopUpStatus(true)}><a href="#/">Sign-Up</a></h4>
                      </center>
                   </td>       
                </tr>
             </table>
          </form> 
       </center>
+      <PopUpSelectRoles trigger={popupstatus} setTrigger={setPopUpStatus}/>
    </div> 
    )
    

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './listViewStyle.css';
 
 export const PopUpViewScheme = (props) =>{
@@ -68,4 +69,21 @@ export const PopUpOeDashboard = (props) =>{
     ) : "";
 }
 
-
+export const PopUpSelectRoles = (props) =>{
+    
+    return (props.trigger) ? (
+        <div className="popup">
+            <div className="popupInner">
+                <tr>
+                    <td colSpan="2"><h4>Select your role to register</h4></td>
+                </tr>
+                <tr>
+                    <td><button className="roleButton" ><Link className="roleButtonLink" to="/agencyregister">Agencies</Link></button></td>
+                    <td><button className="roleButton"><Link className="roleButtonLink" to="/heiregister">HEI</Link></button></td>
+                    <td><button className="roleButton"><Link className="roleButtonLink" to="/oeregister">OE</Link></button></td>
+                </tr>
+                <button className="popupClose" onClick={() => props.setTrigger(false)}>Close</button>
+            </div>
+        </div>
+    ) : "";
+}
