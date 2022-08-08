@@ -1,7 +1,6 @@
 import React,{useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import { PopUpSelectRoles } from "../components/ListView/popup";
-import './register';
 import './pagesStyle.css';
 
 const Login = () =>{
