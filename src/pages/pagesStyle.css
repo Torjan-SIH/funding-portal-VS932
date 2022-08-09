@@ -224,3 +224,14 @@ h1 {
   font-size: 5rem;
 }
 
+
+
+.aboutb{
+   margin-top: -2%;
+   margin-bottom: -2%;
+   background-image: url(https://images.pexels.com/photos/7478855/pexels-photo-7478855.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   background-color: #dfdfdf;
+}
