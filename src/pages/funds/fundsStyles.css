@@ -1,4 +1,4 @@
-.fundProfileDiv{
+.fundProfileDiv, .fundsExploreDiv{
     width: 100%;
     text-align: left;
 }
@@ -10,9 +10,6 @@
     display: inline-flex;
     margin-right: 10%;
    
-}
-.fundsExplorerDiv{
-    font: italic bold 12px/30px Georgia, serif;    
 }
 .heiExplorerDiv{
     font: italic bold 12px/30px Georgia, serif;

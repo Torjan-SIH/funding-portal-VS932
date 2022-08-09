@@ -1,21 +1,16 @@
 import React from "react";
 import HeiSideBar from "../../components/SideBar/HEIsidebar";
 import { CardHeiExplorer } from "../../components/CardView/cardview";
-const HeiExplorer=() =>
 
-
-
-{
+const HeiExplorer = () => {
   return(
-    <div>
-    <div >
-    <HeiSideBar />
-
-    </div>
-
-    <div>
-    <CardHeiExplorer/>
-    </div>
+    <div className="heiExploreDiv">
+      <div className="sideBySide">
+        <HeiSideBar />
+      </div>
+      <div className="sideBySide">
+        <CardHeiExplorer/>
+      </div>
     </div>
   )
 }
