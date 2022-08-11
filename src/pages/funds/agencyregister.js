@@ -59,86 +59,73 @@ const AgencyRegister = () =>{
 
    return(
       <div className="register">
-      <form onSubmit={validate}>
-         <table className="tableRegister" border="2" 
-         bgcolor="white"
-       cellpadding="10"
-       cellspacing="5">
-         <tr><th colSpan='2'><center><b>AGENCY REGISTER</b></center></th></tr>
-         <tr className="firstName">
+      <form onSubmit={validate} className="regform">
+         <table className="tableRegister" 
+        
+       c>
+         <tr><th colSpan='2'><center><h2><b>AGENCY REGISTER</b></h2></center></th></tr>
+         <tr className="firstName" >
             <th>
-            <label className="firstNameLabel" for="NameOfAgency" >Name of Agency </label>
+            <label className="firstNameLabel" for="NameOfAgency" ><center><h5><b>Name of Agency</b></h5></center></label>
             </th>
             <td>
-            <input className="firstNameInput" type="text" name="NameOfAgency" placeholder="Name of Agency" value={NameOfAgency} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
+            <input className="firstNameInput" type="text" id="reg" name="NameOfAgency" placeholder="Name" value={NameOfAgency} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
             </td>
          </tr>
-         <tr className="lastName">
+         <tr className="lastName" >
             <th>
-            <label className="lastNameLabel" for="GovernmentAuthorizationCertification" >Government AUthorized Certificate </label>
+            <label className="lastNameLabel" for="GovernmentAuthorizationCertification"><center><h5><b>Government Authorized Certificate ID</b></h5></center></label>
             </th>
             <td>
-            <input className="lastNameInput" type="text" name="GovernmentAuthorizationCertification" placeholder="Government Authorized Certificate" value={GovernmentAuthorizationCertification} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
+            <input className="lastNameInput" type="text"  id="reg" name="GovernmentAuthorizationCertification" placeholder="Certificate ID" value={GovernmentAuthorizationCertification} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
             </td>
          </tr>
-         <tr className="email">
+         <tr className="email" >
             <th>
-            <label className="emailLabel" for="email" >Email </label>
+            <label className="emailLabel" for="email" ><center><h5><b>Email</b></h5></center></label>
             </th>
             <td>
-            <input className="emailInput" type="email" name="email" placeholder="Email" value={email} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
+            <input className="emailInput" type="email"  id="reg" name="email" placeholder="Email" value={email} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
             </td>
          </tr>
-         <tr className="contactNo">
+         <tr className="contactNo" >
             <th>
-            <label className="contactNoLabel" for="contactNo" >Contact Number </label>
+            <label className="contactNoLabel" for="contactNo" ><center><h5><b>Contact Number </b></h5></center></label>
             </th>
             <td>
-            <input className="contactNoInput" type="contactNo" name="contactNo" placeholder="ContactNo" value={contactNo} minlength="10" maxlength="10"  required onChange = {(e) => changeRegisterHandler(e)}  ></input> 
+            <input className="contactNoInput" type="contactNo" id="reg" name="contactNo" placeholder="ContactNo" value={contactNo} minlength="10" maxlength="10"  required onChange = {(e) => changeRegisterHandler(e)}  ></input> 
             </td>
          </tr>
-         <tr className="address">
+         <tr className="address" >
             <th>
-            <label className="addressLabel" for="address" >Address </label>
+            <label className="addressLabel" for="address"><center><h5><b>Address </b></h5></center></label>
             </th>
             <td>
-            <input className="addressInput" type="text" name="address" placeholder="Address" value={addressInput} required onChange = {(e) => changeRegisterHandler(e)} ></input>
+            <input className="addressInput" type="text" id="reg" name="address" placeholder="Address" value={addressInput} required onChange = {(e) => changeRegisterHandler(e)} ></input>
             </td>
          </tr>
-         <tr className="Roles">
+         <tr className="dateOfAuthorization" >
             <th>
-            <label className="rolesLabel" for="role">Select Role: </label>
+            <label className="dateOfAuthorization" for="dateOfAuthorization" > <center><h5><b>Date of Authorization</b></h5></center></label>
             </th>
             <td>
-            <select className="roleInput" name="role" value={roleInput} required onChange={(e) => changeRegisterHandler(e)} > 
-               <option name="role" value="">Select</option>
-               <option name="role" value="hei" >HEI's</option>
-               <option name="role" value="individual" >Individual</option>
-            </select>
+            <input className="authorizationInput" type="dateOfAuthorization" id="reg" name="dateOfAuthorization" placeholder="Date" value={dateOfAuthorization} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
             </td>
          </tr>
-         <tr className="dateOfAuthorization">
+         <tr className="registerPassword" >
             <th>
-            <label className="dateOfAuthorization" for="dateOfAuthorization" > Date of Authorization</label>
+            <label className="registerLabel" for="passwdRegister"><center><h5><b>Password</b></h5></center></label>
             </th>
             <td>
-            <input className="authorizationInput" type="dateOfAuthorization" name="dateOfAuthorization" placeholder="date of Authorization" value={dateOfAuthorization} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
+            <input className="registerInput" type="password" id="reg" name="password" value={passwdRegister} required onChange={(e) => changeRegisterHandler(e)}></input>
             </td>
          </tr>
-         <tr className="registerPassword">
+         <tr className="confirmPassword" >
             <th>
-            <label className="registerLabel" for="passwdRegister">Password </label>
+            <label className="confirmLabel" for="passwdConfirm"><center><h5><b>confirmPassword </b></h5></center></label>
             </th>
             <td>
-            <input className="registerInput" type="password" name="password" value={passwdRegister} required onChange={(e) => changeRegisterHandler(e)}></input>
-            </td>
-         </tr>
-         <tr className="confirmPassword">
-            <th>
-            <label className="confirmLabel" for="passwdConfirm"> confirmPassword </label>
-            </th>
-            <td>
-            <input className="confirmInput" type="password" name="passwordcnfrm" value={passwdConfirm} required onChange={(e) => changeRegisterHandler(e)}></input>
+            <input className="confirmInput" type="password" id="reg" name="passwordcnfrm" value={passwdConfirm} required onChange={(e) => changeRegisterHandler(e)}></input>
             </td>
          </tr>
          <tr className="passwdWarning"> 

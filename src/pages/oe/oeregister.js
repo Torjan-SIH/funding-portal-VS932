@@ -56,80 +56,64 @@ const OeRegister = () =>{
       },[passwdRegister, passwdConfirm, passwdlen]);
 
    return(
-      <div className="register">
-      <form onSubmit={validate}>
-         <table className="tableRegister" border="2" 
-         bgcolor="white"
-       cellpadding="10"
-       cellspacing="5">
-         <tr><th colSpan='2'><center><b>OE REGISTER</b></center></th></tr>
+      <div className="oeregister">
+      <form onSubmit={validate} className="oeform">
+         <table className="tableRegister">
+         <tr><th colSpan='2'><center><h2><b>OE REGISTER</b></h2></center></th></tr>
          <tr className="firstName">
             <th>
-            <label className="firstNameLabel" for="firstName" >First Name </label>
+            <label className="firstNameLabel" for="firstName"><center><h5><b>First Name</b></h5></center></label>
             </th>
             <td>
-            <input className="firstNameInput" type="text" name="firstName" placeholder="First Name" value={firstName} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
+            <input className="firstNameInput" type="text" name="firstName" id="oereg" placeholder="First Name" value={firstName} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
             </td>
          </tr>
          <tr className="lastName">
             <th>
-            <label className="lastNameLabel" for="lastName" >Last Name </label>
+            <label className="lastNameLabel" for="lastName"><center><h5><b>Last Name</b></h5></center></label>
             </th>
             <td>
-            <input className="lastNameInput" type="text" name="lastName" placeholder="Last Name" value={lastName} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
+            <input className="lastNameInput" type="text" name="lastName" id="oereg" placeholder="Last Name" value={lastName} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
             </td>
          </tr>
          <tr className="email">
             <th>
-            <label className="emailLabel" for="email" >Email </label>
+            <label className="emailLabel" for="email"><center><h5><b>Email</b></h5></center></label>
             </th>
             <td>
-            <input className="emailInput" type="email" name="email" placeholder="Email" value={email} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
+            <input className="emailInput" type="email" name="email" id="oereg" placeholder="Email" value={email} required onChange = {(e) => changeRegisterHandler(e)} ></input> 
             </td>
          </tr>
          <tr className="contactNo">
             <th>
-            <label className="contactNoLabel" for="contactNo" >Contact Number </label>
+            <label className="contactNoLabel" for="contactNo"><center><h5><b>Contact Number</b></h5></center></label>
             </th>
             <td>
-            <input className="contactNoInput" type="contactNo" name="contactNo" placeholder="ContactNo" value={contactNo} minlength="10" maxlength="10"  required onChange = {(e) => changeRegisterHandler(e)}  ></input> 
+            <input className="contactNoInput" type="contactNo" id="oereg" name="contactNo" placeholder="ContactNo" value={contactNo} minlength="10" maxlength="10"  required onChange = {(e) => changeRegisterHandler(e)}  ></input> 
             </td>
          </tr>
          <tr className="address">
             <th>
-            <label className="addressLabel" for="address" >Address </label>
+            <label className="addressLabel" for="address"><center><h5><b>Address</b></h5></center></label>
             </th>
             <td>
-            <input className="addressInput" type="text" name="address" placeholder="Address" value={addressInput} required onChange = {(e) => changeRegisterHandler(e)} ></input>
-            </td>
-         </tr>
-         <tr className="Roles">
-            <th>
-            <label className="rolesLabel" for="role">Select Role: </label>
-            </th>
-            <td>
-            <select className="roleInput" name="role" value={roleInput} required onChange={(e) => changeRegisterHandler(e)} > 
-               <option name="role" value="">Select</option>
-               <option name="role" value="agencies" >Agencies</option>
-               <option name="role" value="hei" >HEI's</option>
-               <option name="role" value="oe" >OE's</option>
-            </select>
+            <input className="addressInput" type="text" id="oereg" name="address" placeholder="Address" value={addressInput} required onChange = {(e) => changeRegisterHandler(e)} ></input>
             </td>
          </tr>
          <tr className="registerPassword">
             <th>
-            <label className="registerLabel" for="passwdRegister">Password </label>
+            <label className="registerLabel" for="passwdRegister"><center><h5><b>Password</b></h5></center></label>
             </th>
             <td>
-            <input className="registerInput" type="password" name="password" value={passwdRegister} required onChange={(e) => changeRegisterHandler(e)}></input>
+            <input className="registerInput" type="password" id="oereg" name="password" value={passwdRegister} required onChange={(e) => changeRegisterHandler(e)}></input>
             </td>
          </tr>
          <tr className="confirmPassword">
             <th>
-            <label className="confirmLabel" for="passwdConfirm"> confirmPassword </label>
+            <label className="confirmLabel" for="passwdConfirm"><center><h5><b>confirmPassword</b></h5></center></label>
             </th>
             <td>
-            <input className="confirmInput" type="password" name="passwordcnfrm" value={passwdConfirm} required onChange={(e) => changeRegisterHandler(e)}></input>
+            <input className="confirmInput" type="password" id="oereg" name="passwordcnfrm" value={passwdConfirm} required onChange={(e) => changeRegisterHandler(e)}></input>
             </td>
          </tr>
          <tr className="passwdWarning"> 

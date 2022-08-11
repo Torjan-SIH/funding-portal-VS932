@@ -34,6 +34,7 @@ const Events = () =>{
             </Carousel.Item>
           </Carousel>
         </div>
+        
       </div>
   )
 }
