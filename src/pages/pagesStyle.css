@@ -381,3 +381,20 @@ h1 {
    overflow: hidden;
    cursor: pointer;
 }
+
+.sketchs1,.sketchs2,.sketchs3,.sketchs4{
+   box-shadow: 4px 10px 14px 4px rgba(76, 55, 82, 0.2);
+   height: 100px;
+   width: 50px;
+}
+.sketch-1,.sketch-2,.sketch-3,.sketch-4{
+   display: inline-block;
+}
+.abouth{
+   font-weight: bolder;
+   font-size: 50px;
+   font-family: ArialBlack;
+   color:darkolivegreen;
+   margin-top: 10%;
+   margin-bottom: 10%;
+}
