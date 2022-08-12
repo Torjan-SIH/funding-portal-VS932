@@ -1,7 +1,7 @@
 .navBar{
    width: 100%;
-   height: 75px;
-   background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url( https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   height: 100px;
+   background-image: linear-gradient(orange,white);
    background-position: center;
    background-size: cover;
    top: 0%;
@@ -18,11 +18,12 @@
    display: inline-block;
    list-style-type: none;
    padding: 20px 30px 30px;
-   font-weight: 500;
-   color: #fff;
+  font-size: larger;
+   color: black;
 } 
 .navBarList{
    width: 100%;
+   
 }
 .logo{
    margin: 10px 20px 20px 20px;
@@ -31,10 +32,10 @@
 
 }
 .logo:hover{
-   color: #f8d93b;
+   color:blue;
 }
 .navList:hover{
-   color: #f8d93b ;
+   color: blue ;
 }
 #onof{
    margin-right: 20px;
