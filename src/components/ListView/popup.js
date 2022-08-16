@@ -78,9 +78,9 @@ export const PopUpSelectRoles = (props) =>{
                     <td colSpan="2"><h4>Select your role to register</h4></td>
                 </tr>
                 <tr>
-                    <td><button className="roleButton" ><Link className="roleButtonLink" to="/agencyregister">Agencies</Link></button></td>
-                    <td><button className="roleButton"><Link className="roleButtonLink" to="/heiregister">HEI</Link></button></td>
-                    <td><button className="roleButton"><Link className="roleButtonLink" to="/oeregister">OE</Link></button></td>
+                    <td><button className="roleButton" ><Link className="roleButtonLink" to="/agencyregister"><h4>Agencies</h4></Link></button></td>
+                    <td><button className="roleButton"><Link className="roleButtonLink" to="/heiregister"><h4>HEI</h4></Link></button></td>
+                    <td><button className="roleButton"><Link className="roleButtonLink" to="/oeregister"><h4>OE</h4></Link></button></td>
                 </tr>
                 <button className="popupClose" onClick={() => props.setTrigger(false)}>Close</button>
             </div>

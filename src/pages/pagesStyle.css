@@ -91,10 +91,6 @@
 .sketch-1, .sketch-2{
    display: inline-block;
 }
-.forgotpassword
-{
-   margin-top: 85px;
-}
 .register{
    margin-bottom: 5%;
    margin-top: 10%;
@@ -247,7 +243,7 @@ h1 {
 .register{
    /*position: absolute;*/
    margin: auto;
-   width: 1000px;
+   width: 800px;
     height: 1300px;
     padding: 20px;
    
@@ -301,7 +297,7 @@ h1 {
 .oeregister{
    /*position: absolute;*/
    margin: auto;
-   width: 1000px;
+   width: 800px;
     height: 1300px;
     padding: 20px;
 }
@@ -311,7 +307,7 @@ h1 {
    background-color:antiquewhite;
    padding-top: 5%; 
    padding-bottom: 5%;
-
+   margin-top: 10%;
 }
 .RegisterSubmitButton{
    width: 170px;
@@ -353,9 +349,10 @@ h1 {
 .heiregister{
    /*position: absolute;*/
    margin: auto;
-   width: 1000px;
+   width: 800px;
     height: 1300px;
     padding: 20px;
+    
 }
 .heiform{
 
@@ -363,7 +360,7 @@ h1 {
    background-color:antiquewhite;
    padding-top: 5%; 
    padding-bottom: 5%;
-
+   margin-top: 10%;
 }
 .RegisterSubmitButton{
    width: 170px;
@@ -390,11 +387,146 @@ h1 {
 .sketch-1,.sketch-2,.sketch-3,.sketch-4{
    display: inline-block;
 }
-.abouth{
+/* .abouth{
    font-weight: bolder;
    font-size: 50px;
    font-family: ArialBlack;
    color:darkolivegreen;
    margin-top: 10%;
    margin-bottom: 10%;
+} */
+.about{
+   background-image: url(https://img.freepik.com/free-vector/geometric-frame-background-green-modern-design-vector_53876-157567.jpg?size=626&ext=jpg&ga=GA1.2.88897579.1660490920);
+   background-size: cover;
+   height: 1200px;
+   margin-top: 0%;
 }
+.div1{
+   height: 400px;
+   background-color: beige;
+   font-size: 80px;
+   font-family: sans-serif;
+   
+}
+.about1{
+   margin-top: 5%;
+}
+.aboutpara{
+   font-family: monospace;
+   font-size: 25px;
+   font-weight: bolder;
+}
+---------------------------
+---------------------------
+/* forgot password page */
+.forgotPassword
+{
+   margin-top: 5%;
+   margin-bottom: 0%;
+}
+.forgotPwd{
+   
+      position: center;
+      margin: auto;
+      width: 500px;
+       height: 630px;
+       padding: 80px 40px;
+   
+}
+.forgottable{
+   border: 0;
+   width: 100%;  
+   margin-top: 5%;
+}
+.loginInput2{
+   border-radius: 5px;
+   font-family: sans-serif;
+   outline: none;
+   border: 2px solid rgba(57,17,69,.2);
+   width: 400px; 
+   margin: 15px 10px 15px 10px;
+   padding: 15px 5px 15px 5px;
+   font-size: 20px;
+   transition: 0.25s;
+   box-shadow: 2px 2px #888888;
+   font-weight: 550;
+   text-align: center;
+   color: black;
+   background-color: white;
+
+}
+
+.forgotbutton2{
+   width: 170px;
+   height: 50px;
+   border: none;
+   margin: 20px 10px 20px 10px;
+   outline: none;
+   background: black;
+   color: #fff;
+   font-size: 22px;
+   border-radius: 40px;
+   text-align: center;
+   box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+}
+.trouble{
+   font-size: 40px;
+}
+/* flipcards */
+
+.flip-card {
+   background-color: transparent;
+   width: 300px;
+   height: 300px;
+   perspective: 1000px;
+   display: inline-block;
+   margin-right: 100px; 
+   border-radius: 25px;
+ }
+ 
+ .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   border-radius: 25px;
+ }
+ 
+ .flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ .flip-card-front, .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   border-radius: 25px;
+ }
+ .flip{
+   border-radius: 25px;
+ }
+ /* .flip-card-front {
+    background-color: #bbb;
+   color: black; 
+   image: url(https://www.pexels.com/search/building/);
+ } */
+ 
+ .flip-card-back {
+   background-color: #2980b9;
+   color: white;
+   transform: rotateY(180deg);
+   border-radius: 25px;
+ }
+ .success{
+   font-size: 60px;
+   text-align: left;
+   color: #2980b9;
+ }

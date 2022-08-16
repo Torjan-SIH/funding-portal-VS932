@@ -11,8 +11,9 @@ const NavBar = () => {
             <Link to="/home" ><li className="navList"><h2><b>Home</b></h2></li></Link>
             <Link to="/about" ><li className="navList"><h2><b>About</b></h2></li></Link>
             <Link to="/contact" ><li className="navList"><h2><b>Contact</b></h2></li></Link>
-            <Link to="/contact" ><li className="navList"><h2><b>Events</b></h2></li></Link>
+            {/* <Link to="/events" ><li className="navList"><h2><b>Events</b></h2></li></Link> */}
             <Link to="/login" ><li className="navList"><h2><b>LogIn</b></h2></li></Link>
+            
         </ul>
 
     </div>

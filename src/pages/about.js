@@ -7,50 +7,65 @@ import "./pagesStyle.css";
 const About = () =>{
     
   return(
+    <body className="about">
+      <div className="div1" align="center">
+        <center className="centerabout">ABOUT US</center>
+      </div>
     <div>
+    <br></br>
+      <br></br>
+    <div className="about1">
+     <p className="aboutpara">" The main motto of this scheme is to provide the funds for the better use of education systems and build our nation "</p>
+    </div>
+    <br></br>
+    <br></br>
+      {/* <center><h3 className="abouth">" Education should be one of the top financing priorities; talking about it doesn't assist the teachers and children who sorely need promises kept. "</h3></center> */}
 
-      <center><h3 className="abouth">"The main hope of education lies in the proper education of its youth"</h3></center>
-        <div className="sketchs">
-          <div>
-          <div className="sketch-1">
-            <h1><b>SECURE</b></h1><br></br>
-            <h2>This Website provides security for both the end users</h2>
-          </div>
-          <div className="sketch-1">
-            <img className="sketch11" src="https://cdn3d.iconscout.com/3d/premium/thumb/badge-4996114-4159572.png" alt=""/>
-          </div>
-          </div>
+      
 
-          <div>
-          <div className="sketch-2">
-            <img className="sketch21" src="https://cdn3d.iconscout.com/3d/premium/thumb/badge-4996114-4159572.png" alt=""/>
-          </div>
-          <div className="sketch-2">
-            <h1><b>Easy to Use</b></h1><br></br>
-            <h2>This is easy to use for any application</h2>
-          </div>
-          </div>
+      <b className="success" align="left">Success Stories</b>
 
-          <div>
-          <div className="sketch-3">
-            <h1><b>User Friendly</b></h1><br></br>
-            <h2>This Website provides user friendly for both the end users</h2>
+      <div className="flipcards"> 
+        
+      <br></br>     
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <img  className="flip" src="https://images.pexels.com/photos/1571673/pexels-photo-1571673.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load.png" alt="hello" width={'300px'} height={'300px'}></img>
+            </div>
+            <div class="flip-card-back">
+              <h2>Faculty funds</h2>
+              <br></br>
+              <h3>The funds are provided for incomes of the salaries</h3> 
+            </div>
           </div>
-          <div className="sketch-3">
-            <img className="sketch3" src="https://cdn3d.iconscout.com/3d/premium/thumb/badge-4996114-4159572.png" alt=""/>
-          </div>
-          </div>
+        </div>
 
 
-          <div className="sketch-4">
-            <img className="sketch4" src="https://cdn3d.iconscout.com/3d/premium/thumb/badge-4996114-4159572.png" alt=""/>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">hello</div>
+            <div class="flip-card-back">
+              <h1>INFRA STRUCTURE</h1> 
+              </div>
           </div>
-          <div className="sketch-4">
-            <h1><b>Accesible</b></h1><br></br>
-            <h2>This is easy Accessible for both the end users</h2>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">hello</div>
+            <div class="flip-card-back">
+              <h1>LABORATORY</h1> 
+            </div>
           </div>
+        </div>
       </div>
+
+      <br></br><br></br>
+
+      
       </div>
+      </body>
   )
 }
 
